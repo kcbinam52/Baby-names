@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+<main class="w">
+{% unless page.url == '/' %}{% include breadcrumb.html %}{% endunless %}
+{{ content }}
+</main>
+{% include footer.html %}
+</body>
+</html>

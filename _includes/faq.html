@@ -1,0 +1,10 @@
+<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
+{% for f in page.faq %}<details><summary>{{ f.q }}</summary>
+<p>{{ f.ne }}</p>
+<p class="en" lang="en">{{ f.en }}</p></details>
+{% endfor %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{% for f in page.faq %}{"@type":"Question","name":{{ f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f.ne | append: ' ' | append: f.en | jsonify }} } }{% unless forloop.last %},{% endunless %}
+{% endfor %}]}
+</script>

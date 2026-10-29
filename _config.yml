@@ -1,0 +1,20 @@
+title: "नेपाली छोरीको नाम"
+title_en: "Nepali Baby Girl Names"
+url: "https://binitasth.com.np"
+lang: ne
+timezone: Asia/Kathmandu
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - wrangler.jsonc
+  - .assetsignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

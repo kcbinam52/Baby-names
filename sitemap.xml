@@ -1,11 +1,8 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://binitasth.com.np/</loc>
-    <lastmod>2026-10-30</lastmod>
-  </url>
-  <url>
-    <loc>https://binitasth.com.np/tools/rashi-finder.html</loc>
-    <lastmod>2026-10-30</lastmod>
-  </url>
-</urlset>
+{% for p in site.pages %}{% if p.sitemap == false or p.noindex or p.name == 'sitemap.xml' or p.name == '404.html' %}{% continue %}{% endif %}{% unless p.url contains '.html' or p.url == '/' %}{% continue %}{% endunless %}
+  <url><loc>{{ site.url }}{{ p.url }}</loc><lastmod>{{ p.updated | default: site.time | date: '%Y-%m-%d' }}</lastmod></url>
+{% endfor %}</urlset>

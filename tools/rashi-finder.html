@@ -1,76 +1,30 @@
-<!DOCTYPE html>
-<html lang="ne">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>नामाक्षर अनुसार राशि खोज्नुहोस् | Rashi Finder Nepal</title>
-<meta name="description" content="नामको पहिलो अक्षरबाट राशि थाहा पाउनुहोस्। Find the rashi of a Nepali name from its first letter: free, instant, no sign-up.">
-<link rel="canonical" href="https://binitasth.com.np/tools/rashi-finder.html">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"राशि भनेको के हो? / What is a rashi?","acceptedAnswer":{"@type":"Answer","text":"राशि ज्योतिषका १२ भागमध्ये एक हो। जन्मका बेला चन्द्रमा रहेको राशिलाई जन्म राशि भनिन्छ। A rashi is one of the 12 zodiac signs in Vedic astrology. The sign the Moon was in at birth is the birth rashi."}},
-{"@type":"Question","name":"नामाक्षर कसरी थाहा पाउने? / How do I find the naming letter?","acceptedAnswer":{"@type":"Answer","text":"जन्मका बेला चन्द्रमा कुन नक्षत्र र पदमा थियो भन्नेले नामाक्षर तय गर्छ। यसका लागि जन्म मिति, समय र ठाउँ चाहिन्छ; ज्योतिषीले कुण्डली हेरेर बताउँछन्। The naming letter depends on the Moon's nakshatra and pada at birth. You need the birth date, time and place; an astrologer reads the chart."}},
-{"@type":"Question","name":"नामको पहिलो अक्षर राशिसँग नमिले के गर्ने? / What if the name does not match the rashi letters?","acceptedAnswer":{"@type":"Answer","text":"धेरै परिवार जन्म राशिकै अक्षरबाट नाम राख्छन्, तर अन्तिम निर्णय परिवारको परम्परा र ज्योतिषीको सल्लाहमा भर पर्छ। Many families pick a name from the birth rashi letters, but the final choice depends on family tradition and an astrologer's advice."}},
-{"@type":"Question","name":"यो तालिका सबै ठाउँमा उस्तै हुन्छ? / Is this chart the same everywhere?","acceptedAnswer":{"@type":"Answer","text":"यहाँ प्रचलित तालिका प्रयोग गरिएको छ। पञ्चाङ वा परम्पराअनुसार केही अक्षरमा सानो फरक हुन सक्छ। This page uses a commonly followed chart. A few letters can differ by almanac or tradition."}},
-{"@type":"Question","name":"छोरा र छोरी दुवैका लागि चल्छ? / Does it work for both boys and girls?","acceptedAnswer":{"@type":"Answer","text":"हो, नामाक्षर तालिका लिङ्गमा भर पर्दैन। Yes, the letter chart is the same for any gender."}}
-]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-{"@type":"ListItem","position":1,"name":"गृहपृष्ठ / Home","item":"https://binitasth.com.np/"},
-{"@type":"ListItem","position":2,"name":"साधन / Tools","item":"https://binitasth.com.np/tools/"},
-{"@type":"ListItem","position":3,"name":"राशि खोज्ने / Rashi finder","item":"https://binitasth.com.np/tools/rashi-finder.html"}
-]}
-</script>
-<style>
-:root{--bg:#fffaf5;--fg:#2a2224;--mu:#6b5d60;--pr:#b3365b;--card:#fff;--bd:#ecd9d9;--hl:#fde7ee}
-@media(prefers-color-scheme:dark){:root{--bg:#1a1416;--fg:#f4eaec;--mu:#b9a9ad;--pr:#f08aa8;--card:#241b1e;--bd:#3a2c30;--hl:#3a2230}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 'Noto Sans Devanagari','Mukta','Nirmala UI','Mangal',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
-.w{max-width:760px;margin:0 auto;padding:0 16px}
-header{border-bottom:1px solid var(--bd);padding:12px 0}
-header a.logo{font-weight:700;color:var(--pr);text-decoration:none}
-nav.bc{font-size:14px;color:var(--mu);padding:12px 0 0}
-nav.bc a{color:var(--mu)}
-h1{font-size:1.65rem;line-height:1.35;margin:.6em 0 .3em}
-h2{font-size:1.3rem;margin:1.6em 0 .4em;color:var(--pr)}
-p{margin:.5em 0}
-.en{color:var(--mu);font-size:.95em}
-a{color:var(--pr)}
-.ad{min-height:280px;margin:22px 0;text-align:center;font-size:11px;color:var(--mu)}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px}
-form{display:flex;gap:8px;flex-wrap:wrap}
-input[type=text]{flex:1 1 180px;min-width:0;font:inherit;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--fg)}
-button{font:inherit;cursor:pointer}
-.go{padding:12px 20px;border:0;border-radius:10px;background:var(--pr);color:#fff;font-weight:700}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.chip{padding:6px 14px;border:1px solid var(--bd);border-radius:999px;background:var(--card);color:var(--fg)}
-.res{margin-top:14px;padding:14px;border-radius:10px;background:var(--hl);display:none}
-.res.show{display:block}
-.res.warn{background:transparent;border:1px dashed var(--bd)}
-.tw{overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:420px}
-th,td{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--hl)}
-tr.on td{background:var(--hl);font-weight:700}
-small{color:var(--mu);font-weight:400}
-details{border-bottom:1px solid var(--bd);padding:10px 0}
-summary{cursor:pointer;font-weight:700}
-ul.rel{padding-left:20px}
-footer{border-top:1px solid var(--bd);margin-top:32px;padding:18px 0 40px;font-size:14px;color:var(--mu)}
-footer a{margin-right:12px}
-</style>
-</head>
-<body>
-<header><div class="w"><a class="logo" href="/">नेपाली छोरीको नाम</a></div></header>
-<main class="w">
-<nav class="bc" aria-label="breadcrumb"><a href="/">गृहपृष्ठ</a> › <a href="/tools/">साधन</a> › राशि खोज्ने</nav>
-
+---
+title: "नामाक्षर अनुसार राशि खोज्नुहोस् | Rashi Finder Nepal"
+description: "नामको पहिलो अक्षरबाट राशि थाहा पाउनुहोस्। Find the rashi of a Nepali name from its first letter: free, instant, no sign-up."
+crumb: "राशि खोज्ने / Rashi finder"
+updated: 2026-10-30
+faq:
+  - q: "राशि भनेको के हो? / What is a rashi?"
+    ne: "राशि ज्योतिषका १२ भागमध्ये एक हो। जन्मका बेला चन्द्रमा रहेको राशिलाई जन्म राशि भनिन्छ।"
+    en: "A rashi is one of the 12 zodiac signs in Vedic astrology. The sign the Moon was in at birth is the birth rashi."
+  - q: "नामाक्षर कसरी थाहा पाउने? / How do I find the naming letter?"
+    ne: "जन्मका बेला चन्द्रमा कुन नक्षत्र र पदमा थियो भन्नेले नामाक्षर तय गर्छ। यसका लागि जन्म मिति, समय र ठाउँ चाहिन्छ; ज्योतिषीले कुण्डली हेरेर बताउँछन्।"
+    en: "The naming letter depends on the Moon's nakshatra and pada at birth. You need the birth date, time and place; an astrologer reads the chart."
+  - q: "नामको पहिलो अक्षर राशिसँग नमिले के गर्ने? / What if the name does not match the rashi letters?"
+    ne: "धेरै परिवार जन्म राशिकै अक्षरबाट नाम राख्छन्, तर अन्तिम निर्णय परिवारको परम्परा र ज्योतिषीको सल्लाहमा भर पर्छ।"
+    en: "Many families pick a name from the birth rashi letters, but the final choice depends on family tradition and an astrologer's advice."
+  - q: "यो तालिका सबै ठाउँमा उस्तै हुन्छ? / Is this chart the same everywhere?"
+    ne: "यहाँ प्रचलित तालिका प्रयोग गरिएको छ। पञ्चाङ वा परम्पराअनुसार केही अक्षरमा सानो फरक हुन सक्छ।"
+    en: "This page uses a commonly followed chart. A few letters can differ by almanac or tradition."
+  - q: "छोरा र छोरी दुवैका लागि चल्छ? / Does it work for both boys and girls?"
+    ne: "हो, नामाक्षर तालिका लिङ्गमा भर पर्दैन।"
+    en: "Yes, the letter chart is the same for any gender."
+---
 <h1>नामको राशि खोज्नुहोस् <span class="en">(Rashi Finder)</span></h1>
 <p>बच्चीको नाम राख्दा धेरै परिवारले राशिको नामाक्षर हेर्छन्। यहाँ नाम लेख्नुहोस्, पहिलो अक्षरले कुन राशिमा पर्छ भनेर तुरुन्तै देख्नुहोस्।</p>
 <p class="en" lang="en">Many Nepali families check the rashi letter before choosing a baby's name. Type a name below and see which rashi its first letter falls under.</p>
 
-<div class="ad" aria-label="विज्ञापन / Advertisement"><!-- AdSense slot 1 (below intro) --></div>
+{% include ad.html n=1 %}
 
 <h2>राशि खोज्ने साधन <span class="en">/ Rashi finder tool</span></h2>
 <div class="card">
@@ -93,7 +47,7 @@ footer a{margin-right:12px}
 <p>यो साधनले नामको पहिलो अक्षर मात्र हेर्छ। जन्मराशि चाहिँ जन्म मिति, समय र ठाउँअनुसार ज्योतिषीले निकाल्छन्।</p>
 <p class="en" lang="en">This tool only looks at the first letter of the name. The birth rashi itself is worked out by an astrologer from the birth date, time and place.</p>
 
-<div class="ad" aria-label="विज्ञापन / Advertisement"><!-- AdSense slot 2 (mid-page) --></div>
+{% include ad.html n=2 %}
 
 <h2>१२ राशि र नामाक्षर <span class="en">/ 12 rashi and naming letters</span></h2>
 <div class="tw">
@@ -117,22 +71,7 @@ footer a{margin-right:12px}
 </div>
 <p class="en" lang="en">Short and long vowel signs (ि/ी, ु/ू) are treated as the same when matching, since names are spelled in different ways.</p>
 
-<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
-<details><summary>१. राशि भनेको के हो? / What is a rashi?</summary>
-<p>राशि ज्योतिषका १२ भागमध्ये एक हो। जन्मका बेला चन्द्रमा रहेको राशिलाई जन्म राशि भनिन्छ।</p>
-<p class="en" lang="en">A rashi is one of the 12 zodiac signs in Vedic astrology. The sign the Moon was in at birth is the birth rashi.</p></details>
-<details><summary>२. नामाक्षर कसरी थाहा पाउने? / How do I find the naming letter?</summary>
-<p>जन्मका बेला चन्द्रमा कुन नक्षत्र र पदमा थियो भन्नेले नामाक्षर तय गर्छ। यसका लागि जन्म मिति, समय र ठाउँ चाहिन्छ; ज्योतिषीले कुण्डली हेरेर बताउँछन्।</p>
-<p class="en" lang="en">The naming letter depends on the Moon's nakshatra and pada at birth. You need the birth date, time and place; an astrologer reads the chart.</p></details>
-<details><summary>३. नामको पहिलो अक्षर राशिसँग नमिले के गर्ने? / What if the name does not match?</summary>
-<p>धेरै परिवार जन्म राशिकै अक्षरबाट नाम राख्छन्, तर अन्तिम निर्णय परिवारको परम्परा र ज्योतिषीको सल्लाहमा भर पर्छ।</p>
-<p class="en" lang="en">Many families pick a name from the birth rashi letters, but the final choice depends on family tradition and an astrologer's advice.</p></details>
-<details><summary>४. यो तालिका सबै ठाउँमा उस्तै हुन्छ? / Is this chart the same everywhere?</summary>
-<p>यहाँ प्रचलित तालिका प्रयोग गरिएको छ। पञ्चाङ वा परम्पराअनुसार केही अक्षरमा सानो फरक हुन सक्छ।</p>
-<p class="en" lang="en">This page uses a commonly followed chart. A few letters can differ by almanac or tradition.</p></details>
-<details><summary>५. छोरा र छोरी दुवैका लागि चल्छ? / Does it work for both boys and girls?</summary>
-<p>हो, नामाक्षर तालिका लिङ्गमा भर पर्दैन।</p>
-<p class="en" lang="en">Yes, the letter chart is the same for any gender.</p></details>
+{% include faq.html %}
 
 <h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
 <ul class="rel">
@@ -144,15 +83,9 @@ footer a{margin-right:12px}
 <li><a href="/guide/naming-ceremony.html">नामकरण / न्वारन गाइड</a> <span class="en">Naming ceremony guide</span></li>
 </ul>
 
-<div class="ad" aria-label="विज्ञापन / Advertisement"><!-- AdSense slot 3 (bottom) --></div>
-</main>
+{% include ad.html n=3 %}
 
-<footer><div class="w">
-<p>अन्तिम अपडेट: 2026-10-30 · <span lang="en">Last updated: 30 October 2026</span></p>
-<p>यहाँ दिइएको जानकारी मार्गदर्शनका लागि मात्र हो; पक्का गर्न पुरोहित वा ज्योतिषीसँग सोध्नुहोस्।<br><span lang="en">Information here is for guidance only. Please confirm with a priest or astrologer.</span></p>
-<p><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a></p>
-</div></footer>
-
+{% raw %}
 <script>
 (function(){
 var rows=[].slice.call(document.querySelectorAll('#rt tbody tr'));
@@ -199,5 +132,4 @@ document.getElementById('f').addEventListener('submit',function(e){e.preventDefa
 [].forEach.call(document.querySelectorAll('.chip'),function(b){b.addEventListener('click',function(){inp.value=b.textContent;go();});});
 })();
 </script>
-</body>
-</html>
+{% endraw %}

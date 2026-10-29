@@ -1,0 +1,8 @@
+<nav class="bc" aria-label="breadcrumb"><a href="/">गृहपृष्ठ</a>{% for c in page.crumbs %} › <a href="{{ c.url }}">{{ c.name }}</a>{% endfor %} › {{ page.crumb | default: page.title }}</nav>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"गृहपृष्ठ / Home","item":"{{ site.url }}/"}
+{% assign pos = 1 %}{% for c in page.crumbs %}{% assign pos = pos | plus: 1 %},{"@type":"ListItem","position":{{ pos }},"name":{{ c.name | jsonify }},"item":"{{ site.url }}{{ c.url }}"}{% endfor %}
+{% assign pos = pos | plus: 1 %},{"@type":"ListItem","position":{{ pos }},"name":{{ page.crumb | default: page.title | jsonify }},"item":"{{ site.url }}{{ page.url }}"}
+]}
+</script>
