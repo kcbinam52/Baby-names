@@ -4,10 +4,14 @@
 {% include head.html %}
 </head>
 <body>
+<a class="skip" href="#main">मुख्य सामग्रीमा जानुहोस् / Skip to content</a>
 {% include header.html %}
-<main class="w">
+<main id="main" class="w">
 {% unless page.url == '/' %}{% include breadcrumb.html %}{% endunless %}
 {{ content }}
+{% include related.html %}
+{% unless page.url == '/' %}{% include share.html %}{% endunless %}
+{% include ad.html n=3 %}
 </main>
 {% include footer.html %}
 </body>

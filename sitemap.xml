@@ -3,6 +3,6 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for p in site.pages %}{% if p.sitemap == false or p.noindex or p.name == 'sitemap.xml' or p.name == '404.html' %}{% continue %}{% endif %}{% unless p.url contains '.html' or p.url == '/' %}{% continue %}{% endunless %}
+{% for p in site.pages %}{% if p.sitemap == false or p.noindex or p.url contains '.' %}{% continue %}{% endif %}
   <url><loc>{{ site.url }}{{ p.url }}</loc><lastmod>{{ p.updated | default: site.time | date: '%Y-%m-%d' }}</lastmod></url>
 {% endfor %}</urlset>

@@ -1,0 +1,48 @@
+- slug: mesh
+  ne: मेष
+  en: Aries
+  letters: "चु चे चो ला ली लु ले लो अ"
+- slug: brish
+  ne: वृष
+  en: Taurus
+  letters: "इ उ ए ओ वा वी वु वे वो"
+- slug: mithun
+  ne: मिथुन
+  en: Gemini
+  letters: "का की कु घ ङ छ के को हा"
+- slug: karkat
+  ne: कर्कट
+  en: Cancer
+  letters: "ही हु हे हो डा डी डु डे डो"
+- slug: singha
+  ne: सिंह
+  en: Leo
+  letters: "मा मी मु मे मो टा टी टु टे"
+- slug: kanya
+  ne: कन्या
+  en: Virgo
+  letters: "टो पा पी पु ष ण ठ पे पो"
+- slug: tula
+  ne: तुला
+  en: Libra
+  letters: "रा री रु रे रो ता ती तु ते"
+- slug: brischik
+  ne: वृश्चिक
+  en: Scorpio
+  letters: "तो ना नी नु ने नो या यी यु"
+- slug: dhanu
+  ne: धनु
+  en: Sagittarius
+  letters: "ये यो भा भी भु धा फा ढा भे"
+- slug: makar
+  ne: मकर
+  en: Capricorn
+  letters: "भो जा जी खी खु खे खो गा गी"
+- slug: kumbha
+  ne: कुम्भ
+  en: Aquarius
+  letters: "गु गे गो सा सी सु से सो दा"
+- slug: meen
+  ne: मीन
+  en: Pisces
+  letters: "दी दु थ झ ञ दे दो चा ची"

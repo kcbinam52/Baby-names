@@ -1,4 +1,8 @@
 <header class="site"><div class="w">
 <a class="logo" href="/">{{ site.title }}</a>
-<nav aria-label="main"><a href="/tools/rashi-finder.html">राशि खोज्ने</a><a href="/guide/naming-ceremony.html">नामकरण गाइड</a><a href="/about.html">हाम्रोबारे</a></nav>
+<nav aria-label="मुख्य मेनु / Main menu">
+<a href="/tools/rashi-finder/"{% if page.url == '/tools/rashi-finder/' %} aria-current="page"{% endif %}>राशि खोज्ने</a>
+<a href="/guide/naming-ceremony/"{% if page.url == '/guide/naming-ceremony/' %} aria-current="page"{% endif %}>नामकरण गाइड</a>
+<a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>हाम्रोबारे</a>
+</nav>
 </div></header>

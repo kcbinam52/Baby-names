@@ -1,0 +1,4 @@
+{% if page.related %}<h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
+<ul class="rel">{% for r in page.related %}
+<li><a href="{{ r.url }}">{{ r.ne }}</a> <span class="en" lang="en">{{ r.en }}</span></li>{% endfor %}
+</ul>{% endif %}

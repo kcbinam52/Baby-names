@@ -1,0 +1,6 @@
+{%- assign u = site.url | append: page.url | url_encode -%}
+{%- assign t = page.crumb | default: page.title | url_encode -%}
+<p class="share"><span>शेयर गर्नुहोस् / Share:</span>
+<a rel="noopener" target="_blank" href="https://wa.me/?text={{ t }}%20{{ u }}">WhatsApp</a>
+<a rel="noopener" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ u }}">Facebook</a>
+<a href="viber://forward?text={{ t }}%20{{ u }}">Viber</a></p>

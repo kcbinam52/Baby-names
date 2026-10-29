@@ -19,10 +19,6 @@ faq:
     ne: "हो, सबै पृष्ठ र साधन निःशुल्क छन्।"
     en: "Yes, all pages and tools are free to use."
 ---
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"नेपाली छोरीको नाम / Nepali Baby Girl Names","url":"https://binitasth.com.np/","inLanguage":["ne","en"]}
-</script>
-
 <h1>छोरीको नाम अर्थसहित <span class="en">(Nepali Baby Girl Names)</span></h1>
 <p>छोरीको नाम रोज्नु खुसीको काम हो, तर धेरै विकल्पले अलमल पनि पार्छ। यहाँ राशि, अक्षर, समुदाय र अर्थका आधारमा नाम छुट्याइएको छ, ताकि आफ्नो परिवारलाई मिल्ने नाम छिट्टै भेट्न सकियोस्।</p>
 <p class="en" lang="en">Choosing a daughter's name is a happy task, but too many options can be confusing. Here the names are sorted by rashi, letter, community and meaning, so you can find one that suits your family faster.</p>
@@ -31,32 +27,30 @@ faq:
 
 <h2>सुरु गर्ने ठाउँ <span class="en">/ Start here</span></h2>
 <div class="grid">
-<div class="card"><h3><a class="big" href="/tools/rashi-finder.html">राशि खोज्ने साधन</a></h3><p class="en" lang="en">Rashi finder: type a name, see its rashi.</p></div>
-<div class="card"><h3><a class="big" href="/guide/naming-ceremony.html">नामकरण / न्वारन गाइड</a></h3><p class="en" lang="en">Naming ceremony guide.</p></div>
+<div class="card"><h3><a class="big" href="/tools/rashi-finder/">राशि खोज्ने साधन</a></h3><p class="en" lang="en">Rashi finder: type a name, see its rashi.</p></div>
+<div class="card"><h3><a class="big" href="/guide/naming-ceremony/">नामकरण / न्वारन गाइड</a></h3><p class="en" lang="en">Naming ceremony guide.</p></div>
 </div>
 
 <h2>राशि अनुसार नाम <span class="en">/ Names by rashi</span></h2>
 <p>जन्मराशिको नामाक्षर हेरेर नाम रोज्न चाहनुहुन्छ भने आफ्नो राशि छान्नुहोस्।</p>
-<div class="chips">
-<a href="/rashi/mesh.html">मेष</a><a href="/rashi/brish.html">वृष</a><a href="/rashi/mithun.html">मिथुन</a><a href="/rashi/karkat.html">कर्कट</a><a href="/rashi/singha.html">सिंह</a><a href="/rashi/kanya.html">कन्या</a><a href="/rashi/tula.html">तुला</a><a href="/rashi/brischik.html">वृश्चिक</a><a href="/rashi/dhanu.html">धनु</a><a href="/rashi/makar.html">मकर</a><a href="/rashi/kumbha.html">कुम्भ</a><a href="/rashi/meen.html">मीन</a>
-</div>
+<div class="chips">{% for r in site.data.rashi %}<a href="/rashi/{{ r.slug }}/">{{ r.ne }}</a>{% endfor %}</div>
 <p class="en" lang="en">Pick your birth rashi to see names that start with its naming letters.</p>
 
 <h2>अक्षर अनुसार नाम <span class="en">/ Names by first letter</span></h2>
 <div class="chips">
-<a href="/names/letter-a.html">अ</a><a href="/names/letter-aa.html">आ</a><a href="/names/letter-ka.html">क</a><a href="/names/letter-ga.html">ग</a><a href="/names/letter-cha.html">च</a><a href="/names/letter-ta.html">त</a><a href="/names/letter-da.html">द</a><a href="/names/letter-na.html">न</a><a href="/names/letter-pa.html">प</a><a href="/names/letter-ma.html">म</a><a href="/names/letter-ra.html">र</a><a href="/names/letter-sa.html">स</a>
+<a href="/names/letter-a/">अ</a><a href="/names/letter-aa/">आ</a><a href="/names/letter-ka/">क</a><a href="/names/letter-ga/">ग</a><a href="/names/letter-cha/">च</a><a href="/names/letter-ta/">त</a><a href="/names/letter-da/">द</a><a href="/names/letter-na/">न</a><a href="/names/letter-pa/">प</a><a href="/names/letter-ma/">म</a><a href="/names/letter-ra/">र</a><a href="/names/letter-sa/">स</a>
 </div>
 
 {% include ad.html n=2 %}
 
 <h2>समुदाय अनुसार नाम <span class="en">/ Names by community</span></h2>
 <div class="chips">
-<a href="/ethnicity/newar.html">नेवार</a><a href="/ethnicity/gurung.html">गुरुङ</a><a href="/ethnicity/magar.html">मगर</a><a href="/ethnicity/tharu.html">थारु</a>
+<a href="/ethnicity/newar/">नेवार</a><a href="/ethnicity/gurung/">गुरुङ</a><a href="/ethnicity/magar/">मगर</a><a href="/ethnicity/tharu/">थारु</a>
 </div>
 
 <h2>अर्थ अनुसार नाम <span class="en">/ Names by meaning</span></h2>
 <div class="chips">
-<a href="/meaning/flower.html">फूल</a><a href="/meaning/goddess.html">देवी</a><a href="/meaning/river.html">नदी</a><a href="/meaning/moon.html">चन्द्रमा</a>
+<a href="/meaning/flower/">फूल</a><a href="/meaning/goddess/">देवी</a><a href="/meaning/river/">नदी</a><a href="/meaning/moon/">चन्द्रमा</a>
 </div>
 
 <h2>हाम्रो नियम <span class="en">/ Our approach</span></h2>
@@ -64,5 +58,3 @@ faq:
 <p class="en" lang="en">A meaning is written only when we are confident. If in doubt, the name is marked “verify meaning”. Famous people are listed only when certain.</p>
 
 {% include faq.html %}
-
-{% include ad.html n=3 %}
