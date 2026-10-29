@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://binitasth.com.np/sitemap.xml
