@@ -1,4 +1,4 @@
-# Names added after the first girl-names list (_data/names.yml, girls only).
+# Additional mixed-gender name entries. Together with names.yml, the public catalogue includes boy and girl names.
 # gender: girl or boy (required). origin: optional (default Sanskrit).
 # status: verify = not fully sure (the page shows the verify tag).
 # syl: first naming syllable; use '(≈ ถ)' style when a short a-sound or आ is read as the chart letter.
