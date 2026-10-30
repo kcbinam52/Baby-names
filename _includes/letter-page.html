@@ -1,0 +1,68 @@
+{%- assign L = site.data.letters | where: 'slug', page.letter | first -%}
+{%- assign ch = L.ch -%}
+{%- assign girls = '' | split: '' -%}
+{%- assign boys = '' | split: '' -%}
+{%- for n in site.data.names -%}{%- assign f = n.name | slice: 0 -%}{%- if f == ch -%}{%- assign girls = girls | push: n -%}{%- endif -%}{%- endfor -%}
+{%- for n in site.data.names_more -%}{%- assign f = n.name | slice: 0 -%}{%- if f == ch -%}{%- if n.gender == 'girl' -%}{%- assign girls = girls | push: n -%}{%- else -%}{%- assign boys = boys | push: n -%}{%- endif -%}{%- endif -%}{%- endfor -%}
+{%- assign girls = girls | sort: 'name' -%}
+{%- assign boys = boys | sort: 'name' -%}
+{%- assign everyone = girls | concat: boys -%}
+{%- assign total = girls.size | plus: boys.size -%}
+<h1>“{{ ch }}” बाट सुरु हुने नाम: छोरा र छोरी <span class="en">(Baby names starting with {{ L.en }})</span></h1>
+<p>“{{ ch }}” बाट सुरु हुने {{ total }} वटा नाम तल अर्थ, उत्पत्ति र राशिसहित दिइएका छन्: छोरीका {{ girls.size }} र छोराका {{ boys.size }}।</p>
+<p class="en" lang="en">{{ total }} names that start with {{ L.en }} ({{ ch }}) are listed below with meaning, origin and rashi: {{ girls.size }} for girls and {{ boys.size }} for boys.</p>
+{% if L.note_ne %}<p>{{ L.note_ne }}</p>
+<p class="en" lang="en">{{ L.note_en }}</p>{% endif %}
+{% include ad.html n=1 %}
+<h2>“{{ ch }}” बाट सुरु हुने छोरीका नाम <span class="en">/ Girl names starting with {{ L.en }}</span></h2>
+{% include name-table.html items=girls mode='letter' %}
+{% include ad.html n=2 %}
+<h2>“{{ ch }}” बाट सुरु हुने छोराका नाम <span class="en">/ Boy names starting with {{ L.en }}</span></h2>
+{% include name-table.html items=boys mode='letter' %}
+<p>* यो चिन्ह भएको नाममा अ-ध्वनिलाई (म, क, र आदि) तालिकाको मा, का, रा अक्षर र आ लाई अ मानेर राशि दिइएको छ। पक्का गर्न ज्योतिषीसँग सोध्नुहोस्। आफ्नो नामको राशि हेर्न <a href="/tools/rashi-finder/">राशि खोज्ने साधन</a> प्रयोग गर्नुहोस्।</p>
+<p class="en" lang="en">* For names marked with this sign, a short a-sound (such as म, क, र) is read as the chart letter मा, का, रा, and आ is read as अ, to give the rashi. Please confirm with an astrologer, or use the <a href="/tools/rashi-finder/">rashi finder</a> for your own name.</p>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":{{ ch | prepend: 'नाम: ' | jsonify }},"itemListElement":[
+{% for n in everyone %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ n.name | jsonify }} }{% unless forloop.last %},{% endunless %}
+{% endfor %}]}
+</script>
+{%- capture q1 %}“{{ ch }}” बाट सुरु हुने नाम कति छन्? / How many names start with {{ L.en }}?{% endcapture -%}
+{%- capture a1 %}यस पृष्ठमा {{ total }} वटा नाम छन् (छोरी {{ girls.size }}, छोरा {{ boys.size }})। सूची क्रमशः बढ्दै जान्छ।{% endcapture -%}
+{%- capture b1 %}This page lists {{ total }} names ({{ girls.size }} girls, {{ boys.size }} boys). The list keeps growing.{% endcapture -%}
+{%- capture q2 %}यी नामको राशि कसरी थाहा पाउने? / How do I find the rashi of these names?{% endcapture -%}
+{%- capture a2 %}तालिकाको राशि स्तम्भमा नामको पहिलो अक्षर अनुसारको राशि दिइएको छ। आफ्नै नाम जाँच्न राशि खोज्ने साधन प्रयोग गर्नुहोस्।{% endcapture -%}
+{%- capture b2 %}The Rashi column gives the rashi of the name's first letter. Use the rashi finder tool to check your own name.{% endcapture -%}
+{%- capture q3 %}छोरा र छोरीका नाम अलग अलग छन्? / Are boy and girl names listed separately?{% endcapture -%}
+{%- capture a3 %}छन्। छोरीका र छोराका नाम छुट्टाछुट्टै तालिकामा दिइएका छन्।{% endcapture -%}
+{%- capture b3 %}Yes. Girl names and boy names are in separate tables.{% endcapture -%}
+{%- capture q4 %}यहाँका अर्थ पक्का छन्? / Are the meanings here certain?{% endcapture -%}
+{%- capture a4 %}पक्का भएका अर्थ मात्र लेखिएका छन्। शंका भएका नाममा “अर्थ पुष्टि गर्नुहोस्” लेखिएको छ।{% endcapture -%}
+{%- capture b4 %}Only meanings we are sure of are written. Doubtful names carry a verify meaning tag.{% endcapture -%}
+{%- capture q5 %}नाम राशिसँग मिल्नैपर्छ? / Must the name match the rashi?{% endcapture -%}
+{%- capture a5 %}अनिवार्य होइन। धेरै परिवारले राशिको नामाक्षर हेर्छन्, तर निर्णय परिवारको परम्परा र ज्योतिषीको सल्लाहमा भर पर्छ।{% endcapture -%}
+{%- capture b5 %}It is not compulsory. Many families look at the rashi letter, but the choice depends on family tradition and an astrologer's advice.{% endcapture -%}
+<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
+<details><summary>{{ q1 }}</summary>
+<p>{{ a1 }}</p>
+<p class="en" lang="en">{{ b1 }}</p></details>
+<details><summary>{{ q2 }}</summary>
+<p>{{ a2 }}</p>
+<p class="en" lang="en">{{ b2 }}</p></details>
+<details><summary>{{ q3 }}</summary>
+<p>{{ a3 }}</p>
+<p class="en" lang="en">{{ b3 }}</p></details>
+<details><summary>{{ q4 }}</summary>
+<p>{{ a4 }}</p>
+<p class="en" lang="en">{{ b4 }}</p></details>
+<details><summary>{{ q5 }}</summary>
+<p>{{ a5 }}</p>
+<p class="en" lang="en">{{ b5 }}</p></details>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":{{ q1 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | append: ' ' | append: b1 | jsonify }} } },
+{"@type":"Question","name":{{ q2 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | append: ' ' | append: b2 | jsonify }} } },
+{"@type":"Question","name":{{ q3 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | append: ' ' | append: b3 | jsonify }} } },
+{"@type":"Question","name":{{ q4 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a4 | append: ' ' | append: b4 | jsonify }} } },
+{"@type":"Question","name":{{ q5 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a5 | append: ' ' | append: b5 | jsonify }} } }
+]}
+</script>

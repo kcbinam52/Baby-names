@@ -20,10 +20,16 @@ defaults:
       type: 'pages'
     values:
       layout: 'default'
-  # DRAFT SWITCH: rashi pages stay noindex until meanings are checked.
-  # Delete this whole block to publish all rashi pages to Google.
+  # DRAFT SWITCH: pages that list names (rashi/ and names/) stay noindex until
+  # the meanings are checked. Delete BOTH blocks below to publish them to Google;
+  # sitemap.xml then lists them automatically.
   - scope:
       path: 'rashi'
+      type: 'pages'
+    values:
+      noindex: true
+  - scope:
+      path: 'names'
       type: 'pages'
     values:
       noindex: true

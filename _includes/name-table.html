@@ -1,9 +1,9 @@
 {%- if include.items.size > 0 -%}
 <div class="tw">
 <table>
-<thead><tr><th>नाम <small>Name</small></th><th>अर्थ <small>Meaning</small></th><th>उत्पत्ति <small>Origin</small></th><th>अक्षर <small>Letter</small></th></tr></thead>
+<thead><tr><th>नाम <small>Name</small></th><th>अर्थ <small>Meaning</small></th><th>उत्पत्ति <small>Origin</small></th><th>{% if include.mode == 'letter' %}राशि <small>Rashi</small>{% else %}अक्षर <small>Letter</small>{% endif %}</th></tr></thead>
 <tbody>
-{% for n in include.items %}<tr><td><strong>{{ n.name }}</strong><br><small>{{ n.en }}</small></td><td>{{ n.meaning_ne }}<br><small>{{ n.meaning_en }}</small>{% if n.status == 'verify' %}<br><em>अर्थ पुष्टि गर्नुहोस् / verify meaning</em>{% endif %}</td><td>{{ n.origin | default: 'संस्कृत / Sanskrit' }}</td><td>{{ n.syl }}</td></tr>
+{% for n in include.items %}<tr><td><strong>{{ n.name }}</strong><br><small>{{ n.en }}</small></td><td>{{ n.meaning_ne }}<br><small>{{ n.meaning_en }}</small>{% if n.status == 'verify' %}<br><em>अर्थ पुष्टि गर्नुहोस् / verify meaning</em>{% endif %}</td><td>{{ n.origin | default: 'संस्कृत / Sanskrit' }}</td><td>{% if include.mode == 'letter' %}{% assign rr = site.data.rashi | where: 'slug', n.rashi | first %}<a href="/rashi/{{ n.rashi }}/">{{ rr.ne }}</a>{% if n.syl contains '≈' %}*{% endif %}{% else %}{{ n.syl }}{% endif %}</td></tr>
 {% endfor %}</tbody>
 </table>
 </div>

@@ -1,0 +1,14 @@
+{%- assign all = site.data.letters -%}
+{%- for x in all -%}{%- if x.slug == page.letter -%}{%- assign i = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign pi = i | minus: 1 -%}{%- if pi < 0 -%}{%- assign pi = 11 -%}{%- endif -%}
+{%- assign ni = i | plus: 1 -%}{%- if ni > 11 -%}{%- assign ni = 0 -%}{%- endif -%}
+{%- assign pv = all[pi] -%}{%- assign nx = all[ni] -%}
+<h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
+<ul class="rel">
+<li><a href="/names/letter-{{ pv.slug }}/">“{{ pv.ch }}” बाट सुरु हुने नाम</a> <span class="en" lang="en">Names starting with {{ pv.en }}</span></li>
+<li><a href="/names/letter-{{ nx.slug }}/">“{{ nx.ch }}” बाट सुरु हुने नाम</a> <span class="en" lang="en">Names starting with {{ nx.en }}</span></li>
+<li><a href="/tools/rashi-finder/">नामको राशि खोज्ने साधन</a> <span class="en" lang="en">Rashi finder tool</span></li>
+<li><a href="/rashi/mesh/">राशि अनुसार नाम (मेषदेखि)</a> <span class="en" lang="en">Names by rashi, starting with Mesh</span></li>
+<li><a href="/guide/naming-ceremony/">नामकरण / न्वारन गाइड</a> <span class="en" lang="en">Naming ceremony guide</span></li>
+<li><a href="/about/">हाम्रोबारे</a> <span class="en" lang="en">About us</span></li>
+</ul>
