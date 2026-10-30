@@ -28,7 +28,7 @@ updated: 2026-10-31
 (function(){
 var form=document.getElementById('parent-form'),out=document.getElementById('matcher-results');
 var names=[
-{% endraw %}{% for n in site.data.names_more %}{% if n.gender == 'boy' or n.gender == 'girl' %}{name:{{ n.name | jsonify }},en:{{ n.en | jsonify }},gender:{{ n.gender | jsonify }},meaning:{{ n.meaning_ne | jsonify }},meaningEn:{{ n.meaning_en | jsonify }},slug:{{ n.slug | jsonify }}}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}{% raw %}
+{% endraw %}{% assign first_name = true %}{% for n in site.data.names_more %}{% if n.gender == 'boy' or n.gender == 'girl' %}{% unless first_name %},{% endunless %}{name:{{ n.name | jsonify }},en:{{ n.en | jsonify }},gender:{{ n.gender | jsonify }},meaning:{{ n.meaning_ne | jsonify }},meaningEn:{{ n.meaning_en | jsonify }},slug:{{ n.slug | jsonify }}}{% assign first_name = false %}{% endif %}{% endfor %}{% raw %}
 ];
 function clean(s){return s.trim().replace(/\s+/g,'');}
 function blend(a,b,gender){
