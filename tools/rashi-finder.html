@@ -1,6 +1,6 @@
 ---
 title: 'नामाक्षर अनुसार राशि खोज्नुहोस् | Rashi Finder Nepal'
-description: 'नामको पहिलो अक्षरबाट राशि थाहा पाउनुहोस्। Find the rashi of a Nepali name from its first letter: free, instant, no sign-up.'
+description: 'नामको पहिलो अक्षरबाट राशि थाहा पाउनुहोस्। Find the rashi of a Nepali boy or girl name from its first letter: free and instant.'
 permalink: /tools/rashi-finder/
 crumb: 'राशि खोज्ने / Rashi finder'
 updated: 2026-10-30
@@ -15,8 +15,8 @@ related:
     ne: '“क” बाट सुरु हुने नाम'
     en: 'Names starting with क'
   - url: '/ethnicity/newar/'
-    ne: 'नेवार छोरीका नाम'
-    en: 'Newar girl names'
+    ne: 'नेवार समुदायका नाम'
+    en: 'Newar community names'
   - url: '/meaning/flower/'
     ne: 'फूलसँग सम्बन्धित नाम'
     en: 'Flower-themed names'
@@ -41,19 +41,19 @@ faq:
     en: 'Yes, the letter chart is the same for any gender.'
 ---
 <h1>नामको राशि खोज्नुहोस् <span class="en">(Rashi Finder)</span></h1>
-<p>बच्चीको नाम राख्दा धेरै परिवारले राशिको नामाक्षर हेर्छन्। यहाँ नाम लेख्नुहोस्, पहिलो अक्षरले कुन राशिमा पर्छ भनेर तुरुन्तै देख्नुहोस्।</p>
-<p class="en" lang="en">Many Nepali families check the rashi letter before choosing a baby's name. Type a name below and see which rashi its first letter falls under.</p>
+<p>छोरा वा छोरीको नाम राख्दा धेरै परिवारले राशिको नामाक्षर हेर्छन्। यहाँ नाम लेख्नुहोस्, पहिलो अक्षरले कुन राशिमा पर्छ भनेर तुरुन्तै देख्नुहोस्।</p>
+<p class="en" lang="en">Many Nepali families check the rashi letter before choosing a baby's name, boy or girl. Type a name below and see which rashi its first letter falls under.</p>
 
 {% include ad.html n=1 %}
 
 <h2>राशि खोज्ने साधन <span class="en">/ Rashi finder tool</span></h2>
 <div class="card">
 <form id="f" autocomplete="off">
-<input type="text" id="n" lang="ne" placeholder="जस्तै: रिया" aria-label="नाम देवनागरीमा / Name in Devanagari">
+<input type="text" id="n" lang="ne" placeholder="जस्तै: रिया, मदन" aria-label="नाम देवनागरीमा / Name in Devanagari">
 <button class="go" type="submit">खोज्नुहोस्</button>
 </form>
 <div class="chips" aria-label="उदाहरण / Examples">
-<button type="button" class="chip">रिया</button><button type="button" class="chip">सिता</button><button type="button" class="chip">मीना</button><button type="button" class="chip">गीता</button><button type="button" class="chip">दीपा</button><button type="button" class="chip">ममता</button>
+<button type="button" class="chip">रिया</button><button type="button" class="chip">सिता</button><button type="button" class="chip">मीना</button><button type="button" class="chip">गीता</button><button type="button" class="chip">दीपा</button><button type="button" class="chip">ममता</button><button type="button" class="chip">आरुषी</button><button type="button" class="chip">मदन</button>
 </div>
 <div id="res" class="res" role="status" aria-live="polite"></div>
 </div>
@@ -64,8 +64,8 @@ faq:
 <li>“खोज्नुहोस्” थिच्नुहोस्।<br><span class="en" lang="en">Press the search button.</span></li>
 <li>तल तालिकामा सम्बन्धित राशि छुट्टिएर देखिन्छ।<br><span class="en" lang="en">The matching rashi is highlighted in the table below.</span></li>
 </ol>
-<p>यो साधनले नामको पहिलो अक्षर मात्र हेर्छ। म, क, र जस्ता अ-ध्वनिका अक्षरलाई तालिकाको मा, का, रा अक्षर मानिन्छ। जन्मराशि चाहिँ जन्म मिति, समय र ठाउँअनुसार ज्योतिषीले निकाल्छन्।</p>
-<p class="en" lang="en">This tool only looks at the first letter of the name. A short a-sound such as म, क or र is read as the chart letter मा, का or रा. The birth rashi itself is worked out by an astrologer from the birth date, time and place.</p>
+<p>यो साधनले नामको पहिलो अक्षर मात्र हेर्छ। म, क, र जस्ता अ-ध्वनिका अक्षरलाई तालिकाको मा, का, रा अक्षर मानिन्छ, र “आ” लाई “अ” मानिन्छ। अर्थात् यस्तो नतिजामा सानो फरक पर्न सक्छ, तैपनि जन्मराशि चाहिँ जन्म मिति, समय र ठाउँअनुसार ज्योतिषीले निकाल्छन्।</p>
+<p class="en" lang="en">This tool only looks at the first letter of the name. A short a-sound such as म, क or र is read as the chart letter मा, का or रा, and आ is read as अ. Such results can differ slightly, and the birth rashi itself is worked out by an astrologer from the birth date, time and place.</p>
 
 {% include ad.html n=2 %}
 
@@ -98,8 +98,8 @@ t=t.replace(/^\s+/,'');
 if(!t)return{e:'empty'};
 var c=t.charAt(0),n=t.charAt(1);
 if(/[A-Za-z]/.test(c))return{e:'latin'};
-var iv={'अ':'अ','इ':'इ','ई':'इ','उ':'उ','ऊ':'उ','ए':'ए','ओ':'ओ'};
-if(iv[c])return{s:iv[c],v:1};
+var iv={'अ':'अ','आ':'अ','इ':'इ','ई':'इ','उ':'उ','ऊ':'उ','ए':'ए','ओ':'ओ'};
+if(iv[c])return{s:iv[c],v:1,aa:(c==='आ')};
 if(c>='\u0904'&&c<='\u0914')return{s:c,v:1};
 if(c>='\u0915'&&c<='\u0939'){
 if(n==='\u094D')return{s:c,c:c,j:1};
@@ -119,8 +119,11 @@ var alt=false;
 if(i===undefined&&a.b){var k=MAP[norm(a.c+'ा')];if(k!==undefined){i=k;alt=true;}}
 if(i!==undefined){
 hl(i);
-var shown=alt?a.c+' (≈ '+a.c+'ा)':a.s;
-out('पहिलो अक्षर: <b>'+shown+'</b> → राशि: <b>'+R[i].n+'</b> <span class="en">('+R[i].e+')</span><br><span class="en">यो राशिका नामाक्षर / Letters: '+R[i].l.join(' ')+'</span>'+(alt?'<br><span class="en">अ-ध्वनिलाई तालिकाको “'+a.c+'ा” अक्षर मानिएको छ; ज्योतिषीसँग पुष्टि गर्नुहोस्। / A short a-sound is read as the chart letter. Please confirm with an astrologer.</span>':''));
+var shown=alt?a.c+' (≈ '+a.c+'ा)':(a.aa?'आ (≈ अ)':a.s);
+var note='';
+if(alt)note='अ-ध्वनिलाई तालिकाको “'+a.c+'ा” अक्षर मानिएको छ; ज्योतिषीसँग पुष्टि गर्नुहोस्। / A short a-sound is read as the chart letter. Please confirm with an astrologer.';
+if(a.aa)note='“आ” लाई तालिकाको “अ” अक्षर मानिएको छ; ज्योतिषीसँग पुष्टि गर्नुहोस्। / The letter आ is read as the chart letter अ. Please confirm with an astrologer.';
+out('पहिलो अक्षर: <b>'+shown+'</b> → राशि: <b>'+R[i].n+'</b> <span class="en">('+R[i].e+')</span><br><span class="en">यो राशिका नामाक्षर / Letters: '+R[i].l.join(' ')+'</span>'+(note?'<br><span class="en">'+note+'</span>':''));
 return;
 }
 if(a.j)return out('यो नाम संयुक्त अक्षरबाट सुरु हुन्छ। राशि ज्योतिषीसँग जाँच्नुहोस्।<br><span class="en">The name starts with a conjunct letter. Please check the rashi with an astrologer.</span>',1);
