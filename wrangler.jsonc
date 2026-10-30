@@ -1,6 +1,9 @@
 {
   "name": "baby-names",
   "compatibility_date": "2026-10-01",
+  "build": {
+    "command": "bundle exec jekyll build"
+  },
   "assets": {
     "directory": "./_site",
     "html_handling": "auto-trailing-slash",
