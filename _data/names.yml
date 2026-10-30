@@ -1,4 +1,4 @@
-# One entry per girl name. Fix a meaning here and every page updates.
+# Girl-name entries. These are combined with the mixed-gender names in names_more.yml on the site.
 # origin: optional (default shown is Sanskrit). status: verify = not fully sure.
 # rashi: slug from _data/rashi.yml. syl: first naming syllable of the name.
 # --- Mesh ---
