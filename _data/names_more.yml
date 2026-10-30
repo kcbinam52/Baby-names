@@ -1,0 +1,192 @@
+# Names added after the first girl-names list (_data/names.yml, girls only).
+# gender: girl or boy (required). origin: optional (default Sanskrit).
+# status: verify = not fully sure (the page shows the verify tag).
+# syl: first naming syllable; use '(≈ ถ)' style when a short a-sound or आ is read as the chart letter.
+# --- Mesh ---
+- {name: अर्जुन, gender: boy, slug: arjun, en: Arjun, syl: अ, rashi: mesh, meaning_ne: 'सेतो; उज्यालो; महाभारतका वीर योद्धा', meaning_en: 'bright; white; the heroic warrior of the Mahabharata'}
+- {name: अनिल, gender: boy, slug: anil, en: Anil, syl: अ, rashi: mesh, meaning_ne: 'हावा', meaning_en: 'wind; air'}
+- {name: अजय, gender: boy, slug: ajay, en: Ajay, syl: अ, rashi: mesh, meaning_ne: 'अजेय; नजितिने', meaning_en: 'invincible; unconquerable'}
+- {name: अमित, gender: boy, slug: amit, en: Amit, syl: अ, rashi: mesh, meaning_ne: 'असीम; अपार', meaning_en: 'limitless; boundless'}
+- {name: अभिषेक, gender: boy, slug: abhishek, en: Abhishek, syl: अ, rashi: mesh, meaning_ne: 'पवित्र जल चढाएर गरिने स्नान; राज्याभिषेक', meaning_en: 'a sacred bathing rite; coronation'}
+- {name: अरुण, gender: boy, slug: arun, en: Arun, syl: अ, rashi: mesh, meaning_ne: 'बिहानको रातो उज्यालो; सूर्योदय', meaning_en: 'the red glow of dawn; sunrise'}
+- {name: अशोक, gender: boy, slug: ashok, en: Ashok, syl: अ, rashi: mesh, meaning_ne: 'शोक नभएको; अशोकको रूख', meaning_en: 'free from sorrow; the ashoka tree'}
+- {name: अनन्त, gender: boy, slug: anant, en: Anant, syl: अ, rashi: mesh, meaning_ne: 'अन्त नभएको; अनन्त', meaning_en: 'endless; infinite'}
+- {name: आकाश, gender: boy, slug: aakash, en: Aakash, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'आकाश', meaning_en: 'sky'}
+- {name: आदित्य, gender: boy, slug: aditya, en: Aditya, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'सूर्य', meaning_en: 'the sun'}
+- {name: आनन्द, gender: boy, slug: anand, en: Anand, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'खुसी; आनन्द', meaning_en: 'joy; bliss'}
+- {name: लोकेश, gender: boy, slug: lokesh, en: Lokesh, syl: लो, rashi: mesh, meaning_ne: 'संसारका स्वामी', meaning_en: 'lord of the world'}
+- {name: चेतन, gender: boy, slug: chetan, en: Chetan, syl: चे, rashi: mesh, meaning_ne: 'चेतना भएको; सचेत', meaning_en: 'conscious; aware'}
+- {name: लीलाधर, gender: boy, slug: leeladhar, en: Leeladhar, syl: ली, rashi: mesh, meaning_ne: 'लीला धारण गर्ने; भगवान् कृष्णको नाम', meaning_en: 'one who bears divine play; a name of Krishna'}
+- {name: आरती, gender: girl, slug: aarati, en: Aarati, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'दीप घुमाएर गरिने पूजा', meaning_en: 'worship by waving a lamp'}
+- {name: आशा, gender: girl, slug: asha, en: Asha, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'आशा; भरोसा', meaning_en: 'hope; expectation'}
+- {name: आरुषी, gender: girl, slug: aarushi, en: Aarushi, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'सूर्यको पहिलो किरण', meaning_en: 'the first ray of the sun'}
+- {name: आभा, gender: girl, slug: aabha, en: Aabha, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'चमक; प्रकाश', meaning_en: 'glow; radiance'}
+- {name: आस्था, gender: girl, slug: aastha, en: Aastha, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'विश्वास; श्रद्धा', meaning_en: 'faith; devotion'}
+- {name: आकृति, gender: girl, slug: aakriti, en: Aakriti, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'रूप; आकार', meaning_en: 'form; shape'}
+- {name: आरोही, gender: girl, slug: aarohi, en: Aarohi, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'माथि चढ्ने', meaning_en: 'one who ascends'}
+- {name: आराध्या, gender: girl, slug: aaradhya, en: Aaradhya, syl: 'आ (≈ अ)', rashi: mesh, meaning_ne: 'पूजनीय', meaning_en: 'worthy of worship'}
+# --- Brish ---
+- {name: इन्द्र, gender: boy, slug: indra, en: Indra, syl: इ, rashi: brish, meaning_ne: 'देवताहरूका राजा', meaning_en: 'king of the gods'}
+- {name: ईश्वर, gender: boy, slug: ishwar, en: Ishwar, syl: इ, rashi: brish, meaning_ne: 'भगवान्; स्वामी', meaning_en: 'god; lord'}
+- {name: ईशान, gender: boy, slug: ishan, en: Ishan, syl: इ, rashi: brish, meaning_ne: 'उत्तर-पूर्व दिशा; शिवको एक नाम', meaning_en: 'the north-east direction; a name of Shiva'}
+- {name: उदय, gender: boy, slug: uday, en: Uday, syl: उ, rashi: brish, meaning_ne: 'उदय; सूर्योदय', meaning_en: 'rise; sunrise'}
+- {name: उमेश, gender: boy, slug: umesh, en: Umesh, syl: उ, rashi: brish, meaning_ne: 'उमाका स्वामी; शिवको नाम', meaning_en: 'lord of Uma; a name of Shiva'}
+- {name: उत्तम, gender: boy, slug: uttam, en: Uttam, syl: उ, rashi: brish, meaning_ne: 'सर्वश्रेष्ठ', meaning_en: 'the best'}
+- {name: उज्वल, gender: boy, slug: ujwal, en: Ujwal, syl: उ, rashi: brish, meaning_ne: 'उज्यालो; चम्किलो', meaning_en: 'bright; shining'}
+- {name: उपेन्द्र, gender: boy, slug: upendra, en: Upendra, syl: उ, rashi: brish, meaning_ne: 'इन्द्रका भाइ; भगवान् विष्णुको एक नाम', meaning_en: 'younger brother of Indra; a name of Vishnu'}
+- {name: एकलव्य, gender: boy, slug: eklavya, en: Eklavya, syl: ए, rashi: brish, meaning_ne: 'महाभारतका निपुण धनुर्धारीको नाम', meaning_en: 'name of a skilled archer in the Mahabharata'}
+- {name: वायु, gender: boy, slug: vayu, en: Vayu, syl: वा, rashi: brish, meaning_ne: 'हावा', meaning_en: 'wind'}
+- {name: वामन, gender: boy, slug: vaman, en: Vaman, syl: वा, rashi: brish, meaning_ne: 'बौना; भगवान् विष्णुको एक अवतार', meaning_en: 'dwarf; an incarnation of Vishnu'}
+- {name: वीर, gender: boy, slug: veer, en: Veer, syl: वी, rashi: brish, meaning_ne: 'बहादुर; साहसी', meaning_en: 'brave; courageous'}
+- {name: वीरेन्द्र, gender: boy, slug: virendra, en: Virendra, syl: वी, rashi: brish, meaning_ne: 'वीरहरूका राजा', meaning_en: 'king of the brave'}
+- {name: वेद, gender: boy, slug: ved, en: Ved, syl: वे, rashi: brish, meaning_ne: 'ज्ञान; पवित्र ग्रन्थ', meaning_en: 'knowledge; sacred scripture'}
+- {name: वेदान्त, gender: boy, slug: vedant, en: Vedant, syl: वे, rashi: brish, meaning_ne: 'वेदको अन्तिम भाग; दर्शन', meaning_en: 'the end of the Vedas; a philosophy'}
+- {name: ओम, gender: boy, slug: om, en: Om, syl: ओ, rashi: brish, meaning_ne: 'पवित्र ध्वनि ॐ', meaning_en: 'the sacred sound Om'}
+# --- Mithun ---
+- {name: कार्तिक, gender: boy, slug: kartik, en: Kartik, syl: का, rashi: mithun, meaning_ne: 'कात्तिक महिना; कार्तिकेय', meaning_en: 'the month of Kartik; Kartikeya'}
+- {name: कान्त, gender: boy, slug: kant, en: Kant, syl: का, rashi: mithun, meaning_ne: 'प्रिय; सुन्दर', meaning_en: 'beloved; handsome'}
+- {name: कुमार, gender: boy, slug: kumar, en: Kumar, syl: कु, rashi: mithun, meaning_ne: 'बालक; राजकुमार', meaning_en: 'boy; prince'}
+- {name: कुबेर, gender: boy, slug: kuber, en: Kuber, syl: कु, rashi: mithun, meaning_ne: 'धनका देवता', meaning_en: 'god of wealth'}
+- {name: कुशल, gender: boy, slug: kushal, en: Kushal, syl: कु, rashi: mithun, meaning_ne: 'दक्ष; निपुण', meaning_en: 'skilled; capable'}
+- {name: कुन्दन, gender: boy, slug: kundan, en: Kundan, syl: कु, rashi: mithun, meaning_ne: 'शुद्ध सुन', meaning_en: 'pure gold'}
+- {name: कुश, gender: boy, slug: kush, en: Kush, syl: कु, rashi: mithun, meaning_ne: 'पवित्र कुश घाँस', meaning_en: 'the sacred kusha grass'}
+- {name: कीर्तिमान, gender: boy, slug: kirtiman, en: Kirtiman, syl: की, rashi: mithun, meaning_ne: 'यशस्वी', meaning_en: 'famous; glorious'}
+- {name: केशव, gender: boy, slug: keshav, en: Keshav, syl: के, rashi: mithun, meaning_ne: 'भगवान् कृष्ण वा विष्णुको नाम', meaning_en: 'a name of Krishna or Vishnu'}
+- {name: केदार, gender: boy, slug: kedar, en: Kedar, syl: के, rashi: mithun, meaning_ne: 'भगवान् शिवको एक नाम', meaning_en: 'a name of Shiva'}
+- {name: केतन, gender: boy, slug: ketan, en: Ketan, syl: के, rashi: mithun, meaning_ne: 'झण्डा; घर', meaning_en: 'flag; house', status: verify}
+- {name: कोविद, gender: boy, slug: kovid, en: Kovid, syl: को, rashi: mithun, meaning_ne: 'विद्वान्; ज्ञानी', meaning_en: 'learned; wise'}
+- {name: हार्दिक, gender: boy, slug: hardik, en: Hardik, syl: हा, rashi: mithun, meaning_ne: 'हृदयदेखिको', meaning_en: 'heartfelt'}
+- {name: छत्रपति, gender: boy, slug: chhatrapati, en: Chhatrapati, syl: छ, rashi: mithun, meaning_ne: 'छत्र धारण गर्ने राजा', meaning_en: 'a king who holds the royal umbrella'}
+- {name: घनश्याम, gender: boy, slug: ghanshyam, en: Ghanshyam, syl: घ, rashi: mithun, meaning_ne: 'बादलजस्तो कालो; भगवान् कृष्णको नाम', meaning_en: 'dark like a cloud; a name of Krishna'}
+# --- Karkat ---
+- {name: हिमाल, gender: boy, slug: himal, en: Himal, syl: ही, rashi: karkat, meaning_ne: 'हिउँले ढाकेको पर्वतशृङ्खला', meaning_en: 'a snow-covered mountain range'}
+- {name: हिमांशु, gender: boy, slug: himanshu, en: Himanshu, syl: ही, rashi: karkat, meaning_ne: 'चन्द्रमा', meaning_en: 'the moon'}
+- {name: हेमन्त, gender: boy, slug: hemant, en: Hemant, syl: हे, rashi: karkat, meaning_ne: 'हेमन्त ऋतु; जाडो', meaning_en: 'the late-autumn season'}
+- {name: हेमराज, gender: boy, slug: hemraj, en: Hemraj, syl: हे, rashi: karkat, meaning_ne: 'सुनको राजा; श्रेष्ठ सुन', meaning_en: 'king of gold; the finest gold', status: verify}
+- {name: हेरम्ब, gender: boy, slug: heramb, en: Heramb, syl: हे, rashi: karkat, meaning_ne: 'भगवान् गणेशको एक नाम', meaning_en: 'a name of Ganesha'}
+- {name: हिमेश, gender: boy, slug: himesh, en: Himesh, syl: ही, rashi: karkat, meaning_ne: 'हिमका स्वामी', meaning_en: 'lord of the snow', status: verify}
+- {name: डोर्जे, gender: boy, slug: dorje, en: Dorje, syl: डो, rashi: karkat, meaning_ne: 'वज्र; हीरा', meaning_en: 'thunderbolt; diamond', origin: 'तिब्बती / Tibetan'}
+# --- Singha ---
+- {name: महेश, gender: boy, slug: mahesh, en: Mahesh, syl: 'म (≈ मा)', rashi: singha, meaning_ne: 'महान् ईश्वर; भगवान् शिव', meaning_en: 'great lord; a name of Shiva'}
+- {name: मदन, gender: boy, slug: madan, en: Madan, syl: 'म (≈ मा)', rashi: singha, meaning_ne: 'प्रेम; कामदेव', meaning_en: 'love; the god of love'}
+- {name: मनोज, gender: boy, slug: manoj, en: Manoj, syl: 'म (≈ मा)', rashi: singha, meaning_ne: 'मनबाट जन्मेको; कामदेव', meaning_en: 'born of the mind; the god of love'}
+- {name: मनिष, gender: boy, slug: manish, en: Manish, syl: 'म (≈ मा)', rashi: singha, meaning_ne: 'विचारशील; बुद्धिमान्', meaning_en: 'thoughtful; wise'}
+- {name: माधव, gender: boy, slug: madhav, en: Madhav, syl: मा, rashi: singha, meaning_ne: 'भगवान् कृष्ण वा विष्णुको नाम', meaning_en: 'a name of Krishna or Vishnu'}
+- {name: मानव, gender: boy, slug: manav, en: Manav, syl: मा, rashi: singha, meaning_ne: 'मनुष्य', meaning_en: 'human being'}
+- {name: मानस, gender: boy, slug: manas, en: Manas, syl: मा, rashi: singha, meaning_ne: 'मन; मानसरोवर', meaning_en: 'mind; Lake Manasarovar'}
+- {name: मार्तण्ड, gender: boy, slug: martand, en: Martand, syl: मा, rashi: singha, meaning_ne: 'सूर्य', meaning_en: 'the sun'}
+- {name: मित्र, gender: boy, slug: mitra, en: Mitra, syl: मि, rashi: singha, meaning_ne: 'साथी; सूर्य', meaning_en: 'friend; the sun'}
+- {name: मुकुन्द, gender: boy, slug: mukunda, en: Mukunda, syl: मु, rashi: singha, meaning_ne: 'भगवान् कृष्णको नाम', meaning_en: 'a name of Krishna'}
+- {name: मुरारी, gender: boy, slug: murari, en: Murari, syl: मु, rashi: singha, meaning_ne: 'मुर दैत्यका शत्रु; भगवान् कृष्ण', meaning_en: 'enemy of the demon Mura; Krishna'}
+- {name: मुरली, gender: boy, slug: murali, en: Murali, syl: मु, rashi: singha, meaning_ne: 'बाँसुरी', meaning_en: 'flute'}
+- {name: मेघ, gender: boy, slug: megh, en: Megh, syl: मे, rashi: singha, meaning_ne: 'बादल', meaning_en: 'cloud'}
+- {name: मोहन, gender: boy, slug: mohan, en: Mohan, syl: मो, rashi: singha, meaning_ne: 'मन मोहित गर्ने; कृष्णको नाम', meaning_en: 'enchanting; a name of Krishna'}
+- {name: मोहित, gender: boy, slug: mohit, en: Mohit, syl: मो, rashi: singha, meaning_ne: 'मोहित भएको', meaning_en: 'enchanted'}
+# --- Kanya ---
+- {name: पार्थ, gender: boy, slug: parth, en: Parth, syl: पा, rashi: kanya, meaning_ne: 'पृथाका छोरा; अर्जुनको एक नाम', meaning_en: 'son of Pritha; a name of Arjuna'}
+- {name: पवन, gender: boy, slug: pawan, en: Pawan, syl: 'प (≈ पा)', rashi: kanya, meaning_ne: 'हावा', meaning_en: 'wind'}
+- {name: पूर्ण, gender: boy, slug: purna, en: Purna, syl: पू, rashi: kanya, meaning_ne: 'पूरा; सम्पूर्ण', meaning_en: 'complete; whole'}
+- {name: पुरुषोत्तम, gender: boy, slug: purushottam, en: Purushottam, syl: पु, rashi: kanya, meaning_ne: 'पुरुषहरूमा श्रेष्ठ; भगवान् विष्णु वा राम', meaning_en: 'the best among men; Vishnu or Rama'}
+- {name: पुष्कर, gender: boy, slug: pushkar, en: Pushkar, syl: पु, rashi: kanya, meaning_ne: 'कमल; एक पवित्र तीर्थ', meaning_en: 'lotus; a sacred pilgrimage place'}
+- {name: पीयूष, gender: boy, slug: piyush, en: Piyush, syl: पी, rashi: kanya, meaning_ne: 'अमृत', meaning_en: 'nectar'}
+- {name: पीताम्बर, gender: boy, slug: pitambar, en: Pitambar, syl: पी, rashi: kanya, meaning_ne: 'पहेँलो वस्त्र धारण गर्ने; कृष्ण', meaning_en: 'one in yellow garments; Krishna'}
+- {name: पुण्य, gender: boy, slug: punya, en: Punya, syl: पु, rashi: kanya, meaning_ne: 'धर्म; पुण्य', meaning_en: 'virtue; merit'}
+- {name: पूर्णचन्द्र, gender: boy, slug: purnachandra, en: Purnachandra, syl: पू, rashi: kanya, meaning_ne: 'पूर्ण चन्द्रमा', meaning_en: 'the full moon'}
+# --- Tula ---
+- {name: राम, gender: boy, slug: ram, en: Ram, syl: रा, rashi: tula, meaning_ne: 'आनन्द दिने; भगवान् रामको नाम', meaning_en: 'pleasing; Lord Rama'}
+- {name: राहुल, gender: boy, slug: rahul, en: Rahul, syl: रा, rashi: tula, meaning_ne: 'बुद्धका छोराको नाम', meaning_en: 'name of the son of the Buddha'}
+- {name: राजन, gender: boy, slug: rajan, en: Rajan, syl: रा, rashi: tula, meaning_ne: 'राजा', meaning_en: 'king'}
+- {name: राजेश, gender: boy, slug: rajesh, en: Rajesh, syl: रा, rashi: tula, meaning_ne: 'राजाहरूका राजा', meaning_en: 'king of kings'}
+- {name: रामचन्द्र, gender: boy, slug: ramchandra, en: Ramchandra, syl: रा, rashi: tula, meaning_ne: 'भगवान् रामको नाम', meaning_en: 'a name of Lord Rama'}
+- {name: रवि, gender: boy, slug: ravi, en: Ravi, syl: 'र (≈ रा)', rashi: tula, meaning_ne: 'सूर्य', meaning_en: 'the sun'}
+- {name: रमेश, gender: boy, slug: ramesh, en: Ramesh, syl: 'र (≈ रा)', rashi: tula, meaning_ne: 'लक्ष्मीका स्वामी; भगवान् विष्णु', meaning_en: 'lord of Lakshmi; Vishnu'}
+- {name: रोहन, gender: boy, slug: rohan, en: Rohan, syl: रो, rashi: tula, meaning_ne: 'उक्लने; उन्नति', meaning_en: 'ascending; rising'}
+- {name: रोहित, gender: boy, slug: rohit, en: Rohit, syl: रो, rashi: tula, meaning_ne: 'रातो; सूर्योदय', meaning_en: 'red; sunrise'}
+- {name: रुद्र, gender: boy, slug: rudra, en: Rudra, syl: रु, rashi: tula, meaning_ne: 'भगवान् शिवको एक रूप', meaning_en: 'a form of Shiva'}
+- {name: रुपेश, gender: boy, slug: rupesh, en: Rupesh, syl: रु, rashi: tula, meaning_ne: 'रूपका स्वामी', meaning_en: 'lord of beauty'}
+- {name: तेज, gender: boy, slug: tej, en: Tej, syl: ते, rashi: tula, meaning_ne: 'प्रकाश; शक्ति', meaning_en: 'brilliance; power'}
+- {name: तेजस, gender: boy, slug: tejas, en: Tejas, syl: ते, rashi: tula, meaning_ne: 'चमक; तेज', meaning_en: 'radiance; brilliance'}
+- {name: तुषार, gender: boy, slug: tushar, en: Tushar, syl: तु, rashi: tula, meaning_ne: 'हिउँ; शीतल', meaning_en: 'snow; frost'}
+- {name: तीर्थ, gender: boy, slug: tirtha, en: Tirtha, syl: ती, rashi: tula, meaning_ne: 'पवित्र स्थान; तीर्थ', meaning_en: 'a holy place'}
+- {name: तारक, gender: boy, slug: tarak, en: Tarak, syl: ता, rashi: tula, meaning_ne: 'पार लगाउने; तारा', meaning_en: 'one who helps cross over; star'}
+# --- Brischik ---
+- {name: नारायण, gender: boy, slug: narayan, en: Narayan, syl: ना, rashi: brischik, meaning_ne: 'भगवान् विष्णुको नाम', meaning_en: 'a name of Vishnu'}
+- {name: नारद, gender: boy, slug: narad, en: Narad, syl: ना, rashi: brischik, meaning_ne: 'देवर्षि नारद; एक ऋषिको नाम', meaning_en: 'the divine sage Narada'}
+- {name: नकुल, gender: boy, slug: nakul, en: Nakul, syl: 'न (≈ ना)', rashi: brischik, meaning_ne: 'नेवला; पाँच पाण्डवमध्ये एक', meaning_en: 'mongoose; one of the five Pandavas'}
+- {name: नवीन, gender: boy, slug: naveen, en: Naveen, syl: 'न (≈ ना)', rashi: brischik, meaning_ne: 'नयाँ', meaning_en: 'new'}
+- {name: नरेश, gender: boy, slug: naresh, en: Naresh, syl: 'न (≈ ना)', rashi: brischik, meaning_ne: 'मनुष्यहरूका राजा', meaning_en: 'king of men'}
+- {name: नीरज, gender: boy, slug: neeraj, en: Neeraj, syl: नी, rashi: brischik, meaning_ne: 'कमल', meaning_en: 'lotus'}
+- {name: नीरव, gender: boy, slug: nirav, en: Nirav, syl: नी, rashi: brischik, meaning_ne: 'शान्त; मौन', meaning_en: 'quiet; silent'}
+- {name: नूतन, gender: boy, slug: nutan, en: Nutan, syl: नु, rashi: brischik, meaning_ne: 'नयाँ', meaning_en: 'new'}
+- {name: यादव, gender: boy, slug: yadav, en: Yadav, syl: या, rashi: brischik, meaning_ne: 'यदुवंशी; कृष्णको वंश', meaning_en: 'of the Yadu clan'}
+- {name: युवराज, gender: boy, slug: yuvraj, en: Yuvraj, syl: यु, rashi: brischik, meaning_ne: 'राजाको उत्तराधिकारी', meaning_en: 'crown prince'}
+- {name: युधिष्ठिर, gender: boy, slug: yudhisthir, en: Yudhisthir, syl: यु, rashi: brischik, meaning_ne: 'महाभारतका धर्मराज', meaning_en: 'the righteous king of the Mahabharata'}
+- {name: नोर्बु, gender: boy, slug: norbu, en: Norbu, syl: नो, rashi: brischik, meaning_ne: 'रत्न; मणि', meaning_en: 'jewel; gem', origin: 'तिब्बती / Tibetan'}
+# --- Dhanu ---
+- {name: भानु, gender: boy, slug: bhanu, en: Bhanu, syl: भा, rashi: dhanu, meaning_ne: 'सूर्य', meaning_en: 'the sun'}
+- {name: भास्कर, gender: boy, slug: bhaskar, en: Bhaskar, syl: भा, rashi: dhanu, meaning_ne: 'सूर्य; प्रकाश दिने', meaning_en: 'the sun; giver of light'}
+- {name: भारत, gender: boy, slug: bharat, en: Bharat, syl: भा, rashi: dhanu, meaning_ne: 'भरतका वंशज', meaning_en: 'descendant of Bharata'}
+- {name: भीम, gender: boy, slug: bhim, en: Bhim, syl: भी, rashi: dhanu, meaning_ne: 'विशाल; शक्तिशाली; पाण्डव भीम', meaning_en: 'huge; mighty; Bhima of the Pandavas'}
+- {name: भीष्म, gender: boy, slug: bhishma, en: Bhishma, syl: भी, rashi: dhanu, meaning_ne: 'भयङ्कर प्रतिज्ञा गर्ने; महाभारतका पितामह', meaning_en: 'of the terrible vow; the grandsire of the Mahabharata'}
+- {name: भुवन, gender: boy, slug: bhuwan, en: Bhuwan, syl: भु, rashi: dhanu, meaning_ne: 'संसार; पृथ्वी', meaning_en: 'the world; the earth'}
+- {name: भूपेन्द्र, gender: boy, slug: bhupendra, en: Bhupendra, syl: भु, rashi: dhanu, meaning_ne: 'राजा', meaning_en: 'king'}
+- {name: भूपाल, gender: boy, slug: bhupal, en: Bhupal, syl: भु, rashi: dhanu, meaning_ne: 'पृथ्वीका पालक; राजा', meaning_en: 'protector of the earth; king'}
+- {name: धार्मिक, gender: boy, slug: dharmik, en: Dharmik, syl: धा, rashi: dhanu, meaning_ne: 'धर्मात्मा', meaning_en: 'righteous'}
+- {name: फाल्गुन, gender: boy, slug: falgun, en: Falgun, syl: फा, rashi: dhanu, meaning_ne: 'फागुन महिना; अर्जुनको एक नाम', meaning_en: 'the month of Phalguna; a name of Arjuna'}
+- {name: योगेश, gender: boy, slug: yogesh, en: Yogesh, syl: यो, rashi: dhanu, meaning_ne: 'योगका स्वामी; शिवको नाम', meaning_en: 'lord of yoga; a name of Shiva'}
+- {name: योगराज, gender: boy, slug: yograj, en: Yograj, syl: यो, rashi: dhanu, meaning_ne: 'योगीहरूका राजा', meaning_en: 'king of yogis'}
+- {name: योगेन्द्र, gender: boy, slug: yogendra, en: Yogendra, syl: यो, rashi: dhanu, meaning_ne: 'योगीहरूमा श्रेष्ठ', meaning_en: 'the best of yogis'}
+# --- Makar ---
+- {name: भोलानाथ, gender: boy, slug: bholanath, en: Bholanath, syl: भो, rashi: makar, meaning_ne: 'सरल हृदयका; शिवको नाम', meaning_en: 'the simple-hearted; a name of Shiva'}
+- {name: जय, gender: boy, slug: jay, en: Jay, syl: 'ज (≈ जा)', rashi: makar, meaning_ne: 'विजय', meaning_en: 'victory'}
+- {name: जनक, gender: boy, slug: janak, en: Janak, syl: 'ज (≈ जा)', rashi: makar, meaning_ne: 'सीताका पिता, मिथिलाका राजा', meaning_en: 'father of Sita, king of Mithila'}
+- {name: जगदीश, gender: boy, slug: jagdish, en: Jagdish, syl: 'ज (≈ जा)', rashi: makar, meaning_ne: 'जगत्का स्वामी', meaning_en: 'lord of the world'}
+- {name: जीवन, gender: boy, slug: jeevan, en: Jeevan, syl: जी, rashi: makar, meaning_ne: 'जीवन; प्राण', meaning_en: 'life'}
+- {name: जीतेन्द्र, gender: boy, slug: jitendra, en: Jitendra, syl: जी, rashi: makar, meaning_ne: 'इन्द्रियहरूलाई जित्ने', meaning_en: 'one who has conquered the senses'}
+- {name: जीत, gender: boy, slug: jeet, en: Jeet, syl: जी, rashi: makar, meaning_ne: 'जित; विजय', meaning_en: 'win; victory', origin: 'संस्कृतबाट / from Sanskrit'}
+- {name: गणेश, gender: boy, slug: ganesh, en: Ganesh, syl: 'ग (≈ गा)', rashi: makar, meaning_ne: 'गणका स्वामी; विघ्नहर्ता देवता', meaning_en: 'lord of the hosts; remover of obstacles'}
+- {name: गिरीश, gender: boy, slug: girish, en: Girish, syl: गी, rashi: makar, meaning_ne: 'पर्वतका स्वामी; शिवको नाम', meaning_en: 'lord of the mountain; a name of Shiva'}
+- {name: गिरिराज, gender: boy, slug: giriraj, en: Giriraj, syl: गी, rashi: makar, meaning_ne: 'पर्वतहरूका राजा', meaning_en: 'king of mountains'}
+- {name: गिरधारी, gender: boy, slug: girdhari, en: Girdhari, syl: गी, rashi: makar, meaning_ne: 'पर्वत धारण गर्ने; कृष्णको नाम', meaning_en: 'bearer of the mountain; Krishna'}
+- {name: खुशाल, gender: boy, slug: khushal, en: Khushal, syl: खु, rashi: makar, meaning_ne: 'प्रसन्न; सुखी', meaning_en: 'happy; prosperous', origin: 'फारसी / Persian'}
+- {name: खेमराज, gender: boy, slug: khemraj, en: Khemraj, syl: खे, rashi: makar, meaning_ne: 'कल्याण वा सुरक्षासँग सम्बन्धित', meaning_en: 'related to welfare and safety', status: verify}
+# --- Kumbha ---
+- {name: गुरु, gender: boy, slug: guru, en: Guru, syl: गु, rashi: kumbha, meaning_ne: 'शिक्षक; मार्गदर्शक', meaning_en: 'teacher; guide'}
+- {name: गुणराज, gender: boy, slug: gunraj, en: Gunraj, syl: गु, rashi: kumbha, meaning_ne: 'गुणहरूका राजा', meaning_en: 'king of virtues'}
+- {name: गोपाल, gender: boy, slug: gopal, en: Gopal, syl: गो, rashi: kumbha, meaning_ne: 'गाईको पालक; कृष्णको नाम', meaning_en: 'protector of cows; a name of Krishna'}
+- {name: गोविन्द, gender: boy, slug: govind, en: Govind, syl: गो, rashi: kumbha, meaning_ne: 'गाई पाल्ने; कृष्णको नाम', meaning_en: 'herder of cows; a name of Krishna'}
+- {name: गोकुल, gender: boy, slug: gokul, en: Gokul, syl: गो, rashi: kumbha, meaning_ne: 'कृष्णले बाल्यकाल बिताएको ठाउँ', meaning_en: 'the place where Krishna spent his childhood'}
+- {name: सागर, gender: boy, slug: sagar, en: Sagar, syl: सा, rashi: kumbha, meaning_ne: 'समुद्र', meaning_en: 'ocean'}
+- {name: सात्विक, gender: boy, slug: satwik, en: Satwik, syl: सा, rashi: kumbha, meaning_ne: 'शुद्ध; सत्त्वगुण भएको', meaning_en: 'pure; of the sattva quality'}
+- {name: साकेत, gender: boy, slug: saket, en: Saket, syl: सा, rashi: kumbha, meaning_ne: 'अयोध्या नगरीको एक नाम', meaning_en: 'a name of the city of Ayodhya'}
+- {name: सार्थक, gender: boy, slug: sarthak, en: Sarthak, syl: सा, rashi: kumbha, meaning_ne: 'अर्थपूर्ण; सफल', meaning_en: 'meaningful; successful'}
+- {name: सिद्धार्थ, gender: boy, slug: siddharth, en: Siddharth, syl: सी, rashi: kumbha, meaning_ne: 'लक्ष्य पूरा गरेको; बुद्धको बाल्यनाम', meaning_en: 'one who has achieved the goal; the childhood name of the Buddha'}
+- {name: सुरेश, gender: boy, slug: suresh, en: Suresh, syl: सु, rashi: kumbha, meaning_ne: 'देवताका राजा; इन्द्र', meaning_en: 'lord of the gods; Indra'}
+- {name: सुजन, gender: boy, slug: sujan, en: Sujan, syl: सु, rashi: kumbha, meaning_ne: 'असल मानिस', meaning_en: 'a good person'}
+- {name: सुनील, gender: boy, slug: sunil, en: Sunil, syl: सु, rashi: kumbha, meaning_ne: 'गाढा नीलो', meaning_en: 'deep blue'}
+- {name: सुदर्शन, gender: boy, slug: sudarshan, en: Sudarshan, syl: सु, rashi: kumbha, meaning_ne: 'राम्रो देखिने; विष्णुको चक्र', meaning_en: 'good-looking; the discus of Vishnu'}
+- {name: सुरज, gender: boy, slug: suraj, en: Suraj, syl: सु, rashi: kumbha, meaning_ne: 'सूर्य', meaning_en: 'the sun', origin: 'संस्कृतबाट / from Sanskrit'}
+- {name: सुशील, gender: boy, slug: sushil, en: Sushil, syl: सु, rashi: kumbha, meaning_ne: 'असल चरित्र भएको', meaning_en: 'of good character'}
+- {name: सुभाष, gender: boy, slug: subhash, en: Subhash, syl: सु, rashi: kumbha, meaning_ne: 'मधुर बोल्ने', meaning_en: 'sweet-spoken'}
+- {name: सोम, gender: boy, slug: som, en: Som, syl: सो, rashi: kumbha, meaning_ne: 'चन्द्रमा', meaning_en: 'the moon'}
+- {name: सोहन, gender: boy, slug: sohan, en: Sohan, syl: सो, rashi: kumbha, meaning_ne: 'सुन्दर; आकर्षक', meaning_en: 'beautiful; attractive', status: verify}
+- {name: सोमनाथ, gender: boy, slug: somnath, en: Somnath, syl: सो, rashi: kumbha, meaning_ne: 'चन्द्रमाका स्वामी; शिव', meaning_en: 'lord of the moon; Shiva'}
+- {name: दामोदर, gender: boy, slug: damodar, en: Damodar, syl: दा, rashi: kumbha, meaning_ne: 'भगवान् कृष्णको नाम', meaning_en: 'a name of Krishna'}
+# --- Meen ---
+- {name: दीपक, gender: boy, slug: deepak, en: Deepak, syl: दी, rashi: meen, meaning_ne: 'दियो; ज्योति', meaning_en: 'a lamp; flame'}
+- {name: दीनानाथ, gender: boy, slug: dinanath, en: Dinanath, syl: दी, rashi: meen, meaning_ne: 'दीनहरूका नाथ; भगवान्', meaning_en: 'lord of the poor; God'}
+- {name: दीनेश, gender: boy, slug: dinesh, en: Dinesh, syl: दी, rashi: meen, meaning_ne: 'दिनका स्वामी; सूर्य', meaning_en: 'lord of the day; the sun'}
+- {name: दीक्षित, gender: boy, slug: dikshit, en: Dikshit, syl: दी, rashi: meen, meaning_ne: 'दीक्षा पाएको', meaning_en: 'one who has received initiation'}
+- {name: दुष्यन्त, gender: boy, slug: dushyant, en: Dushyant, syl: दु, rashi: meen, meaning_ne: 'महाभारतका राजा; शकुन्तलाका पति', meaning_en: 'a king of the Mahabharata; husband of Shakuntala'}
+- {name: देवेन्द्र, gender: boy, slug: devendra, en: Devendra, syl: दे, rashi: meen, meaning_ne: 'देवताका राजा; इन्द्र', meaning_en: 'king of the gods; Indra'}
+- {name: देवराज, gender: boy, slug: devraj, en: Devraj, syl: दे, rashi: meen, meaning_ne: 'देवताहरूका राजा', meaning_en: 'king of the gods'}
+- {name: देवेश, gender: boy, slug: devesh, en: Devesh, syl: दे, rashi: meen, meaning_ne: 'देवताका स्वामी', meaning_en: 'lord of the gods'}
+- {name: देवदत्त, gender: boy, slug: devdatta, en: Devdatta, syl: दे, rashi: meen, meaning_ne: 'देवताले दिएको', meaning_en: 'given by the gods'}
+- {name: देवव्रत, gender: boy, slug: devavrata, en: Devavrata, syl: दे, rashi: meen, meaning_ne: 'भीष्मको मूल नाम', meaning_en: 'the original name of Bhishma'}
+- {name: चाणक्य, gender: boy, slug: chanakya, en: Chanakya, syl: चा, rashi: meen, meaning_ne: 'अर्थशास्त्रका रचयिता कौटिल्यको नाम', meaning_en: 'name of Kautilya, author of the Arthashastra'}
+- {name: चन्द्र, gender: boy, slug: chandra, en: Chandra, syl: 'च (≈ चा)', rashi: meen, meaning_ne: 'चन्द्रमा', meaning_en: 'the moon'}
+- {name: चन्द्रकान्त, gender: boy, slug: chandrakant, en: Chandrakant, syl: 'च (≈ चा)', rashi: meen, meaning_ne: 'चन्द्रमाजस्तो प्रिय', meaning_en: 'dear as the moon'}
+- {name: चन्द्रशेखर, gender: boy, slug: chandrashekhar, en: Chandrashekhar, syl: 'च (≈ चा)', rashi: meen, meaning_ne: 'चन्द्रमा शिरमा धारण गर्ने; शिव', meaning_en: 'one who wears the moon on the head; Shiva'}
+- {name: चिन्तन, gender: boy, slug: chintan, en: Chintan, syl: ची, rashi: meen, meaning_ne: 'सोचाइ; मनन', meaning_en: 'thought; reflection'}
+- {name: चिरञ्जीवी, gender: boy, slug: chiranjeevi, en: Chiranjeevi, syl: ची, rashi: meen, meaning_ne: 'दीर्घायु', meaning_en: 'long-lived'}
+- {name: चिराग, gender: boy, slug: chirag, en: Chirag, syl: ची, rashi: meen, meaning_ne: 'दियो', meaning_en: 'a lamp', origin: 'फारसी / Persian'}

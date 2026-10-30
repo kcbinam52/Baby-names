@@ -1,18 +1,19 @@
 {%- assign r = site.data.rashi | where: 'slug', page.rashi | first -%}
-{%- assign list = site.data.names | where: 'rashi', page.rashi | sort: 'name' -%}
+{%- assign g1 = site.data.names | where: 'rashi', page.rashi -%}
+{%- assign more = site.data.names_more | where: 'rashi', page.rashi -%}
+{%- assign g2 = more | where: 'gender', 'girl' -%}
+{%- assign girls = g1 | concat: g2 | sort: 'name' -%}
+{%- assign boys = more | where: 'gender', 'boy' | sort: 'name' -%}
+{%- assign everyone = girls | concat: boys -%}
 <h2>{{ r.ne }} राशिका छोरीका नाम <span class="en">/ Girl names for {{ r.slug | capitalize }} rashi</span></h2>
-<div class="tw">
-<table>
-<thead><tr><th>नाम <small>Name</small></th><th>अर्थ <small>Meaning</small></th><th>उत्पत्ति <small>Origin</small></th><th>अक्षर <small>Letter</small></th></tr></thead>
-<tbody>
-{% for n in list %}<tr><td><strong>{{ n.name }}</strong><br><small>{{ n.en }}</small></td><td>{{ n.meaning_ne }}<br><small>{{ n.meaning_en }}</small>{% if n.status == 'verify' %}<br><em>अर्थ पुष्टि गर्नुहोस् / verify meaning</em>{% endif %}</td><td>{{ n.origin | default: 'संस्कृत / Sanskrit' }}</td><td>{{ n.syl }}</td></tr>
-{% endfor %}</tbody>
-</table>
-</div>
-<p class="en" lang="en">Each name is placed by its first letter. Please confirm your baby's rashi with an astrologer.</p>
+{% include name-table.html items=girls %}
 {% include ad.html n=2 %}
+<h2>{{ r.ne }} राशिका छोराका नाम <span class="en">/ Boy names for {{ r.slug | capitalize }} rashi</span></h2>
+{% include name-table.html items=boys %}
+<p>नोट: नामको सुरुको छोटो “अ”-ध्वनिलाई (जस्तै म, क, र) तालिकाको मा, का, रा अक्षर, र “आ” लाई “अ” मानेर राखिएको छ। यस्तो नामको “अक्षर” स्तम्भमा ≈ चिन्ह हुन्छ। पक्का गर्न ज्योतिषीसँग सोध्नुहोस्।</p>
+<p class="en" lang="en">Note: a short a-sound at the start of a name (such as म, क, र) is read as the chart letter मा, का, रा, and आ is read as अ. Such names carry the ≈ sign in the Letter column. Please confirm your baby's rashi with an astrologer.</p>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":{{ page.title | jsonify }},"itemListElement":[
-{% for n in list %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ n.name | jsonify }} }{% unless forloop.last %},{% endunless %}
+{"@context":"https://schema.org","@type":"ItemList","name":{{ r.ne | append: ' राशिका नाम' | jsonify }},"itemListElement":[
+{% for n in everyone %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ n.name | jsonify }} }{% unless forloop.last %},{% endunless %}
 {% endfor %}]}
 </script>
