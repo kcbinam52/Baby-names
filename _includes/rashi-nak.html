@@ -1,6 +1,6 @@
 {%- assign r = site.data.rashi | where: 'slug', page.rashi | first -%}
 <h2>{{ r.ne }} राशिमा पर्ने नक्षत्र <span class="en">/ Nakshatras in {{ r.slug | capitalize }}</span></h2>
-<p>{{ r.ne }} राशिमा {% for k in r.naks %}{{ k.n }}{% unless forloop.last %}, {% endunless %}{% endfor %} पर्छन्। बच्चीको नक्षत्र र पद थाहा छ भने सबै अक्षर होइन, त्यसको एउटा अक्षर मात्र हेर्नुहोस्।</p>
+<p>{{ r.ne }} राशिमा {% for k in r.naks %}{{ k.n }}{% unless forloop.last %}, {% endunless %}{% endfor %} पर्छन्। बच्चाको नक्षत्र र पद थाहा छ भने सबै अक्षर होइन, त्यसको एउटा अक्षर मात्र हेर्नुहोस्।</p>
 <p class="en" lang="en">{{ r.slug | capitalize }} covers {% for k in r.naks %}{{ k.e }}{% unless forloop.last %}, {% endunless %}{% endfor %}. If you know your baby's nakshatra and pada, look only at that one letter, not all of them.</p>
 <div class="tw">
 <table>
