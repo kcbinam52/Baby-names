@@ -4,6 +4,10 @@ url: 'https://binitasth.com.np'
 lang: ne
 timezone: Asia/Kathmandu
 
+# Ad slots stay hidden (no blank gaps) until AdSense is approved.
+# After approval set this to true and paste your AdSense code into _includes/ad.html
+ads_enabled: false
+
 # Fill these in when ready (empty = tag is not output)
 og_image: ''                  # e.g. /assets/og-default.png (1200x630 PNG or JPG)
 google_site_verification: ''   # Search Console HTML-tag token
