@@ -20,19 +20,7 @@ defaults:
       type: 'pages'
     values:
       layout: 'default'
-  # DRAFT SWITCH: pages that list names (rashi/ and names/) stay noindex until
-  # the meanings are checked. Delete BOTH blocks below to publish them to Google;
-  # sitemap.xml then lists them automatically.
-  - scope:
-      path: 'rashi'
-      type: 'pages'
-    values:
-      noindex: true
-  - scope:
-      path: 'names'
-      type: 'pages'
-    values:
-      noindex: true
+  # The rashi and name-list pages are public and eligible for indexing.
 
 exclude:
   - wrangler.jsonc
