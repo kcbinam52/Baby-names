@@ -1,0 +1,6 @@
+{%- assign r = site.data.rashi | where: "slug", page.rashi | first -%}
+<h1>{{ r.ne }} राशिका छोरीका नाम <span class="en">(Girl names for {{ r.slug | capitalize }} rashi, {{ r.en }})</span></h1>
+<p>{{ r.ne }} राशिका नामाक्षर: <strong>{{ r.letters }}</strong>। यी अक्षरबाट सुरु हुने छोरीका नाम तल अर्थसहित दिइएका छन्।</p>
+<p class="en" lang="en">The naming letters for {{ r.slug | capitalize }} ({{ r.en }}) rashi are {{ r.letters }}. Girl names that start with these letters are listed below with meanings.</p>
+<div class="chips" aria-label="नामाक्षर / Naming letters">{% assign ls = r.letters | split: " " %}{% for l in ls %}<span class="chip">{{ l }}</span>{% endfor %}</div>
+{% include ad.html n=1 %}

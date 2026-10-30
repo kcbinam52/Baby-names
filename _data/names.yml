@@ -1,0 +1,183 @@
+# One entry per girl name. Fix a meaning here and every page updates.
+# status: ok = confident; verify = not fully sure (page shows the verify tag)
+# rashi: slug from _data/rashi.yml; syl: first naming syllable of the name
+- name: "अदिति"
+  slug: aditi
+  en: "Aditi"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "असीम; बन्धनरहित"
+  meaning_en: "boundless; unbound"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अनन्या"
+  slug: ananya
+  en: "Ananya"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "अद्वितीय; जस्तो अर्को कोही छैन"
+  meaning_en: "unique; without a second"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अञ्जली"
+  slug: anjali
+  en: "Anjali"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "दुवै हत्केला जोडेर गरिने अर्पण वा नमस्कार"
+  meaning_en: "an offering or greeting with joined palms"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अपर्णा"
+  slug: aparna
+  en: "Aparna"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "देवी पार्वतीको एक नाम"
+  meaning_en: "a name of goddess Parvati"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अम्बिका"
+  slug: ambika
+  en: "Ambika"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "आमा; देवी दुर्गाको एक नाम"
+  meaning_en: "mother; a name of goddess Durga"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अमृता"
+  slug: amrita
+  en: "Amrita"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "अमर; अमृत"
+  meaning_en: "immortal; nectar"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अर्चना"
+  slug: archana
+  en: "Archana"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "पूजा; आराधना"
+  meaning_en: "worship; adoration"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अर्पिता"
+  slug: arpita
+  en: "Arpita"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "अर्पण गरिएकी; समर्पित"
+  meaning_en: "offered; dedicated"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अवनी"
+  slug: avani
+  en: "Avani"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "पृथ्वी"
+  meaning_en: "earth"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अश्विनी"
+  slug: ashwini
+  en: "Ashwini"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "२७ नक्षत्रमध्ये पहिलो नक्षत्रको नाम"
+  meaning_en: "name of the first of the 27 nakshatras"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अस्मिता"
+  slug: asmita
+  en: "Asmita"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "आत्मसम्मान; पहिचानको भाव"
+  meaning_en: "self-respect; sense of identity"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अनुपमा"
+  slug: anupama
+  en: "Anupama"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "अतुलनीय; जसको उपमा दिन सकिँदैन"
+  meaning_en: "incomparable; beyond comparison"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "अनुष्का"
+  slug: anushka
+  en: "Anushka"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "कृपा; अनुग्रह"
+  meaning_en: "grace; favour"
+  origin: "पुष्टि गर्नुहोस् / verify"
+  status: verify
+- name: "अनिशा"
+  slug: anisha
+  en: "Anisha"
+  syl: "अ"
+  rashi: mesh
+  meaning_ne: "निरन्तर; अविराम"
+  meaning_en: "continuous; unceasing"
+  origin: "पुष्टि गर्नुहोस् / verify"
+  status: verify
+- name: "चेतना"
+  slug: chetana
+  en: "Chetana"
+  syl: "चे"
+  rashi: mesh
+  meaning_ne: "चेतना; होस; जागरूकता"
+  meaning_en: "consciousness; awareness"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "लीला"
+  slug: leela
+  en: "Leela"
+  syl: "ली"
+  rashi: mesh
+  meaning_ne: "खेल; दिव्य क्रीडा"
+  meaning_en: "play; divine play"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "लावण्या"
+  slug: lavanya
+  en: "Lavanya"
+  syl: "ला"
+  rashi: mesh
+  meaning_ne: "सौन्दर्य; आकर्षण"
+  meaning_en: "beauty; charm"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "लोचना"
+  slug: lochana
+  en: "Lochana"
+  syl: "लो"
+  rashi: mesh
+  meaning_ne: "आँखा"
+  meaning_en: "eye"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "लेखा"
+  slug: lekha
+  en: "Lekha"
+  syl: "ले"
+  rashi: mesh
+  meaning_ne: "लेखन; रेखा"
+  meaning_en: "writing; a line"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
+- name: "लीना"
+  slug: leena
+  en: "Leena"
+  syl: "ली"
+  rashi: mesh
+  meaning_ne: "लीन; तल्लीन"
+  meaning_en: "absorbed; engrossed"
+  origin: "संस्कृत / Sanskrit"
+  status: ok
