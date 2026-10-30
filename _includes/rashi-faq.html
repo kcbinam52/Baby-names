@@ -1,0 +1,44 @@
+{%- assign r = site.data.rashi | where: 'slug', page.rashi | first -%}
+{%- assign R = r.slug | capitalize -%}
+{%- capture nak_ne %}{% for k in r.naks %}{{ k.n }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture -%}
+{%- capture nak_en %}{% for k in r.naks %}{{ k.e }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture -%}
+{%- capture q1 %}{{ r.ne }} राशिका नामाक्षर के हुन्? / What are the naming letters for {{ R }} rashi?{% endcapture -%}
+{%- capture a1 %}{{ r.ne }} राशिका नामाक्षर {{ r.letters }} हुन्।{% endcapture -%}
+{%- capture b1 %}The naming letters for {{ R }} rashi are {{ r.letters }}.{% endcapture -%}
+{%- capture q2 %}{{ r.ne }} राशिमा कुन नक्षत्र पर्छन्? / Which nakshatras fall in {{ R }}?{% endcapture -%}
+{%- capture a2 %}{{ r.ne }} राशिमा {{ nak_ne }} पर्छन्।{% endcapture -%}
+{%- capture b2 %}{{ R }} covers {{ nak_en }}.{% endcapture -%}
+{%- capture q3 %}नाम यही अक्षरबाटै राख्नैपर्छ? / Must the name start with these letters?{% endcapture -%}
+{%- capture a3 %}अनिवार्य होइन। धेरै परिवारले यी अक्षर हेर्छन्, तर निर्णय परिवारको परम्परा र ज्योतिषीको सल्लाहमा भर पर्छ।{% endcapture -%}
+{%- capture b3 %}It is not compulsory. Many families look at these letters, but the choice depends on family tradition and an astrologer's advice.{% endcapture -%}
+{%- capture q4 %}यहाँका अर्थ पक्का छन्? / Are the meanings here certain?{% endcapture -%}
+{%- capture a4 %}पक्का भएका अर्थ मात्र लेखिएका छन्। शंका भएका नाममा “अर्थ पुष्टि गर्नुहोस्” लेखिएको छ।{% endcapture -%}
+{%- capture b4 %}Only meanings we are sure of are written. Doubtful names carry a verify meaning tag.{% endcapture -%}
+{%- capture q5 %}आफ्नो राशि कसरी थाहा पाउने? / How do I know my rashi?{% endcapture -%}
+{%- capture a5 %}जन्म मिति, समय र ठाउँबाट ज्योतिषीले जन्मराशि निकाल्छन्। नामको पहिलो अक्षरको राशि हेर्न राशि खोज्ने साधन प्रयोग गर्नुहोस्।{% endcapture -%}
+{%- capture b5 %}An astrologer works out the birth rashi from the birth date, time and place. To see the rashi of a name's first letter, use the rashi finder tool.{% endcapture -%}
+<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
+<details><summary>{{ q1 }}</summary>
+<p>{{ a1 }}</p>
+<p class="en" lang="en">{{ b1 }}</p></details>
+<details><summary>{{ q2 }}</summary>
+<p>{{ a2 }}</p>
+<p class="en" lang="en">{{ b2 }}</p></details>
+<details><summary>{{ q3 }}</summary>
+<p>{{ a3 }}</p>
+<p class="en" lang="en">{{ b3 }}</p></details>
+<details><summary>{{ q4 }}</summary>
+<p>{{ a4 }}</p>
+<p class="en" lang="en">{{ b4 }}</p></details>
+<details><summary>{{ q5 }}</summary>
+<p>{{ a5 }}</p>
+<p class="en" lang="en">{{ b5 }}</p></details>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":{{ q1 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | append: ' ' | append: b1 | jsonify }} } },
+{"@type":"Question","name":{{ q2 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | append: ' ' | append: b2 | jsonify }} } },
+{"@type":"Question","name":{{ q3 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | append: ' ' | append: b3 | jsonify }} } },
+{"@type":"Question","name":{{ q4 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a4 | append: ' ' | append: b4 | jsonify }} } },
+{"@type":"Question","name":{{ q5 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a5 | append: ' ' | append: b5 | jsonify }} } }
+]}
+</script>

@@ -1,21 +1,28 @@
-title: "नेपाली छोरीको नाम"
-title_en: "Nepali Baby Girl Names"
-url: "https://binitasth.com.np"
+title: 'नेपाली छोरीको नाम'
+title_en: 'Nepali Baby Girl Names'
+url: 'https://binitasth.com.np'
 lang: ne
 timezone: Asia/Kathmandu
 
 # Fill these in when ready (empty = tag is not output)
-og_image: ""                  # e.g. /assets/og-default.png (1200x630 PNG or JPG)
-google_site_verification: ""   # Search Console HTML-tag token
-bing_site_verification: ""     # Bing Webmaster token
-ga4_id: ""                     # e.g. G-XXXXXXXXXX
+og_image: ''                  # e.g. /assets/og-default.png (1200x630 PNG or JPG)
+google_site_verification: ''   # Search Console HTML-tag token
+bing_site_verification: ''     # Bing Webmaster token
+ga4_id: ''                     # e.g. G-XXXXXXXXXX
 
 defaults:
   - scope:
-      path: ""
-      type: "pages"
+      path: ''
+      type: 'pages'
     values:
-      layout: "default"
+      layout: 'default'
+  # DRAFT SWITCH: rashi pages stay noindex until meanings are checked.
+  # Delete this whole block to publish all rashi pages to Google.
+  - scope:
+      path: 'rashi'
+      type: 'pages'
+    values:
+      noindex: true
 
 exclude:
   - wrangler.jsonc

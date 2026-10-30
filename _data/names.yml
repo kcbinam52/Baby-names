@@ -1,183 +1,215 @@
 # One entry per girl name. Fix a meaning here and every page updates.
-# status: ok = confident; verify = not fully sure (page shows the verify tag)
-# rashi: slug from _data/rashi.yml; syl: first naming syllable of the name
-- name: "अदिति"
-  slug: aditi
-  en: "Aditi"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "असीम; बन्धनरहित"
-  meaning_en: "boundless; unbound"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अनन्या"
-  slug: ananya
-  en: "Ananya"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "अद्वितीय; जस्तो अर्को कोही छैन"
-  meaning_en: "unique; without a second"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अञ्जली"
-  slug: anjali
-  en: "Anjali"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "दुवै हत्केला जोडेर गरिने अर्पण वा नमस्कार"
-  meaning_en: "an offering or greeting with joined palms"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अपर्णा"
-  slug: aparna
-  en: "Aparna"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "देवी पार्वतीको एक नाम"
-  meaning_en: "a name of goddess Parvati"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अम्बिका"
-  slug: ambika
-  en: "Ambika"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "आमा; देवी दुर्गाको एक नाम"
-  meaning_en: "mother; a name of goddess Durga"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अमृता"
-  slug: amrita
-  en: "Amrita"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "अमर; अमृत"
-  meaning_en: "immortal; nectar"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अर्चना"
-  slug: archana
-  en: "Archana"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "पूजा; आराधना"
-  meaning_en: "worship; adoration"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अर्पिता"
-  slug: arpita
-  en: "Arpita"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "अर्पण गरिएकी; समर्पित"
-  meaning_en: "offered; dedicated"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अवनी"
-  slug: avani
-  en: "Avani"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "पृथ्वी"
-  meaning_en: "earth"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अश्विनी"
-  slug: ashwini
-  en: "Ashwini"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "२७ नक्षत्रमध्ये पहिलो नक्षत्रको नाम"
-  meaning_en: "name of the first of the 27 nakshatras"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अस्मिता"
-  slug: asmita
-  en: "Asmita"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "आत्मसम्मान; पहिचानको भाव"
-  meaning_en: "self-respect; sense of identity"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अनुपमा"
-  slug: anupama
-  en: "Anupama"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "अतुलनीय; जसको उपमा दिन सकिँदैन"
-  meaning_en: "incomparable; beyond comparison"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "अनुष्का"
-  slug: anushka
-  en: "Anushka"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "कृपा; अनुग्रह"
-  meaning_en: "grace; favour"
-  origin: "पुष्टि गर्नुहोस् / verify"
-  status: verify
-- name: "अनिशा"
-  slug: anisha
-  en: "Anisha"
-  syl: "अ"
-  rashi: mesh
-  meaning_ne: "निरन्तर; अविराम"
-  meaning_en: "continuous; unceasing"
-  origin: "पुष्टि गर्नुहोस् / verify"
-  status: verify
-- name: "चेतना"
-  slug: chetana
-  en: "Chetana"
-  syl: "चे"
-  rashi: mesh
-  meaning_ne: "चेतना; होस; जागरूकता"
-  meaning_en: "consciousness; awareness"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "लीला"
-  slug: leela
-  en: "Leela"
-  syl: "ली"
-  rashi: mesh
-  meaning_ne: "खेल; दिव्य क्रीडा"
-  meaning_en: "play; divine play"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "लावण्या"
-  slug: lavanya
-  en: "Lavanya"
-  syl: "ला"
-  rashi: mesh
-  meaning_ne: "सौन्दर्य; आकर्षण"
-  meaning_en: "beauty; charm"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "लोचना"
-  slug: lochana
-  en: "Lochana"
-  syl: "लो"
-  rashi: mesh
-  meaning_ne: "आँखा"
-  meaning_en: "eye"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "लेखा"
-  slug: lekha
-  en: "Lekha"
-  syl: "ले"
-  rashi: mesh
-  meaning_ne: "लेखन; रेखा"
-  meaning_en: "writing; a line"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
-- name: "लीना"
-  slug: leena
-  en: "Leena"
-  syl: "ली"
-  rashi: mesh
-  meaning_ne: "लीन; तल्लीन"
-  meaning_en: "absorbed; engrossed"
-  origin: "संस्कृत / Sanskrit"
-  status: ok
+# origin: optional (default shown is Sanskrit). status: verify = not fully sure.
+# rashi: slug from _data/rashi.yml. syl: first naming syllable of the name.
+# --- Mesh ---
+- {name: अदिति, slug: aditi, en: Aditi, syl: अ, rashi: mesh, meaning_ne: 'असीम; बन्धनरहित', meaning_en: 'boundless; unbound'}
+- {name: अनन्या, slug: ananya, en: Ananya, syl: अ, rashi: mesh, meaning_ne: 'अद्वितीय; जस्तो अर्को कोही छैन', meaning_en: 'unique; without a second'}
+- {name: अञ्जली, slug: anjali, en: Anjali, syl: अ, rashi: mesh, meaning_ne: 'दुवै हत्केला जोडेर गरिने अर्पण वा नमस्कार', meaning_en: 'an offering or greeting with joined palms'}
+- {name: अपर्णा, slug: aparna, en: Aparna, syl: अ, rashi: mesh, meaning_ne: 'देवी पार्वतीको एक नाम', meaning_en: 'a name of goddess Parvati'}
+- {name: अम्बिका, slug: ambika, en: Ambika, syl: अ, rashi: mesh, meaning_ne: 'आमा; देवी दुर्गाको एक नाम', meaning_en: 'mother; a name of goddess Durga'}
+- {name: अमृता, slug: amrita, en: Amrita, syl: अ, rashi: mesh, meaning_ne: 'अमर; अमृत', meaning_en: 'immortal; nectar'}
+- {name: अर्चना, slug: archana, en: Archana, syl: अ, rashi: mesh, meaning_ne: 'पूजा; आराधना', meaning_en: 'worship; adoration'}
+- {name: अर्पिता, slug: arpita, en: Arpita, syl: अ, rashi: mesh, meaning_ne: 'अर्पण गरिएकी; समर्पित', meaning_en: 'offered; dedicated'}
+- {name: अवनी, slug: avani, en: Avani, syl: अ, rashi: mesh, meaning_ne: 'पृथ्वी', meaning_en: 'earth'}
+- {name: अश्विनी, slug: ashwini, en: Ashwini, syl: अ, rashi: mesh, meaning_ne: '२७ नक्षत्रमध्ये पहिलो नक्षत्रको नाम', meaning_en: 'name of the first of the 27 nakshatras'}
+- {name: अस्मिता, slug: asmita, en: Asmita, syl: अ, rashi: mesh, meaning_ne: 'आत्मसम्मान; पहिचानको भाव', meaning_en: 'self-respect; sense of identity'}
+- {name: अनुपमा, slug: anupama, en: Anupama, syl: अ, rashi: mesh, meaning_ne: 'अतुलनीय; जसको उपमा दिन सकिँदैन', meaning_en: 'incomparable; beyond comparison'}
+- {name: अनुष्का, slug: anushka, en: Anushka, syl: अ, rashi: mesh, meaning_ne: 'कृपा; अनुग्रह', meaning_en: 'grace; favour', origin: 'पुष्टि गर्नुहोस् / verify', status: verify}
+- {name: अनिशा, slug: anisha, en: Anisha, syl: अ, rashi: mesh, meaning_ne: 'निरन्तर; अविराम', meaning_en: 'continuous; unceasing', origin: 'पुष्टि गर्नुहोस् / verify', status: verify}
+- {name: चेतना, slug: chetana, en: Chetana, syl: चे, rashi: mesh, meaning_ne: 'चेतना; होस; जागरूकता', meaning_en: 'consciousness; awareness'}
+- {name: लीला, slug: leela, en: Leela, syl: ली, rashi: mesh, meaning_ne: 'खेल; दिव्य क्रीडा', meaning_en: 'play; divine play'}
+- {name: लावण्या, slug: lavanya, en: Lavanya, syl: ला, rashi: mesh, meaning_ne: 'सौन्दर्य; आकर्षण', meaning_en: 'beauty; charm'}
+- {name: लोचना, slug: lochana, en: Lochana, syl: लो, rashi: mesh, meaning_ne: 'आँखा', meaning_en: 'eye'}
+- {name: लेखा, slug: lekha, en: Lekha, syl: ले, rashi: mesh, meaning_ne: 'लेखन; रेखा', meaning_en: 'writing; a line'}
+- {name: लीना, slug: leena, en: Leena, syl: ली, rashi: mesh, meaning_ne: 'लीन; तल्लीन', meaning_en: 'absorbed; engrossed'}
+# --- Brish ---
+- {name: इन्दिरा, slug: indira, en: Indira, syl: इ, rashi: brish, meaning_ne: 'देवी लक्ष्मीको एक नाम', meaning_en: 'a name of goddess Lakshmi'}
+- {name: ईशानी, slug: ishani, en: Ishani, syl: इ, rashi: brish, meaning_ne: 'देवी पार्वतीको एक नाम', meaning_en: 'a name of goddess Parvati'}
+- {name: ईश्वरी, slug: ishwari, en: Ishwari, syl: इ, rashi: brish, meaning_ne: 'देवी; स्वामिनी', meaning_en: 'goddess; female ruler'}
+- {name: उमा, slug: uma, en: Uma, syl: उ, rashi: brish, meaning_ne: 'देवी पार्वतीको एक नाम', meaning_en: 'a name of goddess Parvati'}
+- {name: उषा, slug: usha, en: Usha, syl: उ, rashi: brish, meaning_ne: 'बिहानको उज्यालो; अरुणोदय', meaning_en: 'dawn; first light'}
+- {name: ऊर्जा, slug: urja, en: Urja, syl: उ, rashi: brish, meaning_ne: 'शक्ति; बल', meaning_en: 'energy; strength'}
+- {name: उपासना, slug: upasana, en: Upasana, syl: उ, rashi: brish, meaning_ne: 'आराधना; पूजा', meaning_en: 'worship; devotion'}
+- {name: उत्तरा, slug: uttara, en: Uttara, syl: उ, rashi: brish, meaning_ne: 'उत्तर दिशा', meaning_en: 'the north direction'}
+- {name: उर्मिला, slug: urmila, en: Urmila, syl: उ, rashi: brish, meaning_ne: 'रामायणमा सीताकी बहिनीको नाम', meaning_en: 'name of the sister of Sita in the Ramayana'}
+- {name: एकता, slug: ekta, en: Ekta, syl: ए, rashi: brish, meaning_ne: 'एकता; मेल', meaning_en: 'unity; harmony'}
+- {name: वाणी, slug: vani, en: Vani, syl: वा, rashi: brish, meaning_ne: 'बोली; देवी सरस्वतीको एक नाम', meaning_en: 'speech; a name of goddess Saraswati'}
+- {name: वीणा, slug: veena, en: Veena, syl: वी, rashi: brish, meaning_ne: 'वीणा नामक बाजा; सरस्वतीको वाद्य', meaning_en: 'the veena instrument, linked with Saraswati'}
+- {name: वेदिका, slug: vedika, en: Vedika, syl: वे, rashi: brish, meaning_ne: 'यज्ञ गर्ने वेदी', meaning_en: 'a sacrificial altar'}
+- {name: वासन्ती, slug: vasanti, en: Vasanti, syl: वा, rashi: brish, meaning_ne: 'वसन्त ऋतुसँग सम्बन्धित', meaning_en: 'related to the spring season'}
+# --- Mithun ---
+- {name: काव्या, slug: kavya, en: Kavya, syl: का, rashi: mithun, meaning_ne: 'कविता; काव्य', meaning_en: 'poetry; verse'}
+- {name: कान्ता, slug: kanta, en: Kanta, syl: का, rashi: mithun, meaning_ne: 'प्रिय; सुन्दर स्त्री', meaning_en: 'beloved; a beautiful woman'}
+- {name: कामना, slug: kamana, en: Kamana, syl: का, rashi: mithun, meaning_ne: 'इच्छा; चाहना', meaning_en: 'wish; desire'}
+- {name: कावेरी, slug: kaveri, en: Kaveri, syl: का, rashi: mithun, meaning_ne: 'दक्षिण भारतको एउटा नदीको नाम', meaning_en: 'name of a river in South India', origin: 'नदीको नाम / river name'}
+- {name: कालिका, slug: kalika, en: Kalika, syl: का, rashi: mithun, meaning_ne: 'देवी काली वा दुर्गाको एक रूप', meaning_en: 'a form of goddess Kali or Durga'}
+- {name: कीर्ति, slug: kirti, en: Kirti, syl: की, rashi: mithun, meaning_ne: 'यश; प्रसिद्धि', meaning_en: 'fame; glory'}
+- {name: किशोरी, slug: kishori, en: Kishori, syl: की, rashi: mithun, meaning_ne: 'तरुणी; किशोरी कन्या', meaning_en: 'a young girl; adolescent girl'}
+- {name: कुमारी, slug: kumari, en: Kumari, syl: कु, rashi: mithun, meaning_ne: 'कन्या; अविवाहित केटी', meaning_en: 'a girl; an unmarried girl'}
+- {name: कुसुम, slug: kusum, en: Kusum, syl: कु, rashi: mithun, meaning_ne: 'फूल', meaning_en: 'flower'}
+- {name: कुन्ती, slug: kunti, en: Kunti, syl: कु, rashi: mithun, meaning_ne: 'महाभारतमा पाण्डवहरूकी आमाको नाम', meaning_en: 'name of the mother of the Pandavas in the Mahabharata'}
+- {name: कुमुद, slug: kumud, en: Kumud, syl: कु, rashi: mithun, meaning_ne: 'रातमा फुल्ने कमलको एक प्रकार', meaning_en: 'a kind of lotus that blooms at night'}
+- {name: केतकी, slug: ketaki, en: Ketaki, syl: के, rashi: mithun, meaning_ne: 'केतकी फूल', meaning_en: 'the ketaki (screwpine) flower'}
+- {name: केशिनी, slug: keshini, en: Keshini, syl: के, rashi: mithun, meaning_ne: 'लामो कपाल भएकी', meaning_en: 'one with long hair'}
+- {name: कोमल, slug: komal, en: Komal, syl: को, rashi: mithun, meaning_ne: 'नरम; कोमल', meaning_en: 'soft; gentle'}
+- {name: कोकिला, slug: kokila, en: Kokila, syl: को, rashi: mithun, meaning_ne: 'कोइली चरा', meaning_en: 'the cuckoo bird'}
+- {name: कोपिला, slug: kopila, en: Kopila, syl: को, rashi: mithun, meaning_ne: 'फूलको कोपिला', meaning_en: 'a flower bud', origin: 'नेपाली / Nepali'}
+- {name: हार्दिका, slug: hardika, en: Hardika, syl: हा, rashi: mithun, meaning_ne: 'हृदयदेखिको; हार्दिक', meaning_en: 'heartfelt; from the heart'}
+- {name: हासिनी, slug: hasini, en: Hasini, syl: हा, rashi: mithun, meaning_ne: 'हाँस्ने; हँसमुख', meaning_en: 'one who smiles; cheerful'}
+- {name: छवि, slug: chhabi, en: Chhabi, syl: छ, rashi: mithun, meaning_ne: 'आभा; सुन्दर आकृति', meaning_en: 'radiance; beautiful appearance'}
+# --- Karkat ---
+- {name: हिमानी, slug: himani, en: Himani, syl: ही, rashi: karkat, meaning_ne: 'हिउँसँग सम्बन्धित; हिमाली', meaning_en: 'related to snow; snowy'}
+- {name: हीरा, slug: hira, en: Hira, syl: ही, rashi: karkat, meaning_ne: 'हीरा; बहुमूल्य रत्न', meaning_en: 'diamond; a precious gem'}
+- {name: हिमा, slug: hima, en: Hima, syl: ही, rashi: karkat, meaning_ne: 'हिउँ; हिमाल', meaning_en: 'snow; the Himalaya'}
+- {name: हेमा, slug: hema, en: Hema, syl: हे, rashi: karkat, meaning_ne: 'सुनौलो; सुन', meaning_en: 'golden; gold'}
+- {name: हेमन्ती, slug: hemanti, en: Hemanti, syl: हे, rashi: karkat, meaning_ne: 'हेमन्त ऋतुसँग सम्बन्धित', meaning_en: 'related to the late-autumn season'}
+- {name: हेमलता, slug: hemlata, en: Hemlata, syl: हे, rashi: karkat, meaning_ne: 'सुनजस्तो लता', meaning_en: 'a golden creeper'}
+- {name: हिरण्या, slug: hiranya, en: Hiranya, syl: ही, rashi: karkat, meaning_ne: 'सुन; सुनौलो', meaning_en: 'gold; golden'}
+- {name: डोल्मा, slug: dolma, en: Dolma, syl: डो, rashi: karkat, meaning_ne: 'देवी तारा; तिब्बती परम्परामा करुणाकी देवी', meaning_en: 'Tara, goddess of compassion in Tibetan Buddhism', origin: 'तिब्बती / Tibetan'}
+- {name: डिम्पल, slug: dimple, en: Dimple, syl: डी, rashi: karkat, meaning_ne: 'गालामा पर्ने सानो खोपिल्टो', meaning_en: 'a small hollow in the cheek', origin: 'अंग्रेजी / English'}
+- {name: डेकी, slug: deki, en: Deki, syl: डे, rashi: karkat, meaning_ne: 'सुख; खुसी', meaning_en: 'happiness; joy', origin: 'तिब्बती / Tibetan (verify)', status: verify}
+# --- Singha ---
+- {name: माया, slug: maya, en: Maya, syl: मा, rashi: singha, meaning_ne: 'माया; स्नेह', meaning_en: 'affection; love'}
+- {name: माधुरी, slug: madhuri, en: Madhuri, syl: मा, rashi: singha, meaning_ne: 'मिठास; माधुर्य', meaning_en: 'sweetness'}
+- {name: मानसी, slug: mansi, en: Mansi, syl: मा, rashi: singha, meaning_ne: 'मनबाट जन्मेकी; मनसँग सम्बन्धित', meaning_en: 'born of the mind; of the mind'}
+- {name: मालती, slug: malati, en: Malati, syl: मा, rashi: singha, meaning_ne: 'चमेलीजस्तो फूल फुल्ने लता', meaning_en: 'a jasmine-like flowering creeper'}
+- {name: माला, slug: mala, en: Mala, syl: मा, rashi: singha, meaning_ne: 'फूल वा मोतीको माला', meaning_en: 'a garland'}
+- {name: मानवी, slug: manavi, en: Manavi, syl: मा, rashi: singha, meaning_ne: 'मानव जातिकी स्त्री', meaning_en: 'a human woman'}
+- {name: मीना, slug: meena, en: Meena, syl: मी, rashi: singha, meaning_ne: 'माछा', meaning_en: 'fish'}
+- {name: मीरा, slug: meera, en: Meera, syl: मी, rashi: singha, meaning_ne: 'भक्त कवयित्री मीराबाईको नाम', meaning_en: 'name of the devotional poet Mirabai', origin: 'पुष्टि गर्नुहोस् / verify', status: verify}
+- {name: मीनाक्षी, slug: meenakshi, en: Meenakshi, syl: मी, rashi: singha, meaning_ne: 'माछाजस्ता आँखा भएकी; देवी पार्वतीको एक नाम', meaning_en: 'one with fish-shaped eyes; a name of Parvati'}
+- {name: मुक्ता, slug: mukta, en: Mukta, syl: मु, rashi: singha, meaning_ne: 'मोती', meaning_en: 'pearl'}
+- {name: मुदिता, slug: mudita, en: Mudita, syl: मु, rashi: singha, meaning_ne: 'प्रसन्न; खुसी', meaning_en: 'joyful; happy'}
+- {name: मुग्धा, slug: mugdha, en: Mugdha, syl: मु, rashi: singha, meaning_ne: 'मोहित; निश्छल', meaning_en: 'enchanted; innocent'}
+- {name: मेघा, slug: megha, en: Megha, syl: मे, rashi: singha, meaning_ne: 'बादल', meaning_en: 'cloud'}
+- {name: मेनका, slug: menaka, en: Menaka, syl: मे, rashi: singha, meaning_ne: 'स्वर्गकी एक अप्सराको नाम', meaning_en: 'name of a celestial nymph'}
+- {name: मेधा, slug: medha, en: Medha, syl: मे, rashi: singha, meaning_ne: 'बुद्धि; प्रतिभा', meaning_en: 'intelligence; wisdom'}
+- {name: मोहिनी, slug: mohini, en: Mohini, syl: मो, rashi: singha, meaning_ne: 'मोहित गर्ने', meaning_en: 'enchanting'}
+- {name: मोक्षदा, slug: mokshada, en: Mokshada, syl: मो, rashi: singha, meaning_ne: 'मोक्ष दिने', meaning_en: 'one who grants liberation'}
+# --- Kanya ---
+- {name: पार्वती, slug: parvati, en: Parvati, syl: पा, rashi: kanya, meaning_ne: 'पर्वतकी छोरी; शिवकी पत्नी', meaning_en: 'daughter of the mountain; wife of Shiva'}
+- {name: पूजा, slug: puja, en: Puja, syl: पू, rashi: kanya, meaning_ne: 'पूजा; आराधना', meaning_en: 'worship'}
+- {name: पूर्णिमा, slug: purnima, en: Purnima, syl: पू, rashi: kanya, meaning_ne: 'पूर्ण चन्द्रमा भएको रात', meaning_en: 'the full-moon night'}
+- {name: पुष्पा, slug: pushpa, en: Pushpa, syl: पु, rashi: kanya, meaning_ne: 'फूल', meaning_en: 'flower'}
+- {name: पूनम, slug: poonam, en: Poonam, syl: पू, rashi: kanya, meaning_ne: 'पूर्णिमा; पूर्ण चन्द्रमाको रात', meaning_en: 'full-moon night'}
+- {name: पेमा, slug: pema, en: Pema, syl: पे, rashi: kanya, meaning_ne: 'कमलको फूल', meaning_en: 'lotus', origin: 'तिब्बती / Tibetan'}
+- {name: पुनीता, slug: punita, en: Punita, syl: पु, rashi: kanya, meaning_ne: 'पवित्र', meaning_en: 'pure'}
+- {name: पूर्वी, slug: purvi, en: Purvi, syl: पू, rashi: kanya, meaning_ne: 'पूर्व दिशासँग सम्बन्धित', meaning_en: 'of the east'}
+- {name: पुलकिता, slug: pulkita, en: Pulkita, syl: पु, rashi: kanya, meaning_ne: 'हर्षले रोमाञ्चित', meaning_en: 'thrilled with joy'}
+- {name: पुष्पिता, slug: pushpita, en: Pushpita, syl: पु, rashi: kanya, meaning_ne: 'फुलेकी; फूलले सजिएकी', meaning_en: 'in bloom; adorned with flowers'}
+- {name: पारमिता, slug: paramita, en: Paramita, syl: पा, rashi: kanya, meaning_ne: 'पूर्णता; उत्कृष्टता (बौद्ध शिक्षामा)', meaning_en: 'perfection (in Buddhist teaching)'}
+# --- Tula ---
+- {name: राधा, slug: radha, en: Radha, syl: रा, rashi: tula, meaning_ne: 'कृष्णकी प्रिय सखी राधाको नाम', meaning_en: 'name of Radha, the beloved companion of Krishna'}
+- {name: राजेश्वरी, slug: rajeshwari, en: Rajeshwari, syl: रा, rashi: tula, meaning_ne: 'राजाकी स्वामिनी; देवी', meaning_en: 'queen; goddess'}
+- {name: रानी, slug: rani, en: Rani, syl: रा, rashi: tula, meaning_ne: 'राजाकी पत्नी; रानी', meaning_en: 'queen'}
+- {name: रागिनी, slug: ragini, en: Ragini, syl: रा, rashi: tula, meaning_ne: 'सङ्गीतको एक धुन; राग', meaning_en: 'a musical mode; melody'}
+- {name: रिद्धि, slug: riddhi, en: Riddhi, syl: रि, rashi: tula, meaning_ne: 'समृद्धि; सफलता', meaning_en: 'prosperity; success'}
+- {name: रीति, slug: riti, en: Riti, syl: री, rashi: tula, meaning_ne: 'रीति; चलन', meaning_en: 'custom; tradition'}
+- {name: रुक्मिणी, slug: rukmini, en: Rukmini, syl: रु, rashi: tula, meaning_ne: 'भगवान् कृष्णकी पत्नीको नाम', meaning_en: 'name of the wife of Krishna'}
+- {name: रुचि, slug: ruchi, en: Ruchi, syl: रु, rashi: tula, meaning_ne: 'रुचि; चाहना', meaning_en: 'interest; liking'}
+- {name: रुपाली, slug: rupali, en: Rupali, syl: रु, rashi: tula, meaning_ne: 'रूपले सुन्दर', meaning_en: 'beautiful in form'}
+- {name: रेखा, slug: rekha, en: Rekha, syl: रे, rashi: tula, meaning_ne: 'रेखा; धर्सो', meaning_en: 'a line'}
+- {name: रेवती, slug: revati, en: Revati, syl: रे, rashi: tula, meaning_ne: '२७ नक्षत्रमध्ये अन्तिम नक्षत्रको नाम', meaning_en: 'name of the last of the 27 nakshatras'}
+- {name: रेणुका, slug: renuka, en: Renuka, syl: रे, rashi: tula, meaning_ne: 'धूलोको कण; परशुरामकी आमाको नाम', meaning_en: 'a particle of dust; mother of Parashurama'}
+- {name: रोशनी, slug: roshni, en: Roshni, syl: रो, rashi: tula, meaning_ne: 'उज्यालो; प्रकाश', meaning_en: 'light; brightness', origin: 'फारसी / Persian'}
+- {name: रोहिणी, slug: rohini, en: Rohini, syl: रो, rashi: tula, meaning_ne: '२७ नक्षत्रमध्ये एक नक्षत्रको नाम', meaning_en: 'name of one of the 27 nakshatras'}
+- {name: तारा, slug: tara, en: Tara, syl: ता, rashi: tula, meaning_ne: 'तारा; देवी तारा', meaning_en: 'star; goddess Tara'}
+- {name: तुलसी, slug: tulsi, en: Tulsi, syl: तु, rashi: tula, meaning_ne: 'पवित्र मानिने तुलसीको बिरुवा', meaning_en: 'the holy basil plant'}
+- {name: तेजस्विनी, slug: tejaswini, en: Tejaswini, syl: ते, rashi: tula, meaning_ne: 'तेज भएकी; प्रतिभाशाली', meaning_en: 'radiant; brilliant'}
+- {name: तीस्ता, slug: teesta, en: Teesta, syl: ती, rashi: tula, meaning_ne: 'हिमालयबाट बग्ने एउटा नदीको नाम', meaning_en: 'name of a river flowing from the Himalaya', origin: 'नदीको नाम / river name'}
+# --- Vrischik ---
+- {name: नारायणी, slug: narayani, en: Narayani, syl: ना, rashi: brischik, meaning_ne: 'देवी दुर्गा वा लक्ष्मीको एक नाम; एउटा नदीको नाम', meaning_en: 'a name of Durga or Lakshmi; also a river'}
+- {name: नीलम, slug: neelam, en: Neelam, syl: नी, rashi: brischik, meaning_ne: 'नीलो रङको बहुमूल्य रत्न', meaning_en: 'the blue sapphire gem'}
+- {name: नीलिमा, slug: neelima, en: Neelima, syl: नी, rashi: brischik, meaning_ne: 'नीलो रङ; नीलोपन', meaning_en: 'blue colour; blueness'}
+- {name: नीलाक्षी, slug: neelakshi, en: Neelakshi, syl: नी, rashi: brischik, meaning_ne: 'नीला आँखा भएकी', meaning_en: 'one with blue eyes'}
+- {name: निशा, slug: nisha, en: Nisha, syl: नी, rashi: brischik, meaning_ne: 'रात', meaning_en: 'night'}
+- {name: निहारिका, slug: niharika, en: Niharika, syl: नी, rashi: brischik, meaning_ne: 'तारापुञ्ज; कुहिरो', meaning_en: 'nebula; mist'}
+- {name: निर्मला, slug: nirmala, en: Nirmala, syl: नी, rashi: brischik, meaning_ne: 'शुद्ध; स्वच्छ', meaning_en: 'pure; clean'}
+- {name: निवेदिता, slug: nivedita, en: Nivedita, syl: नी, rashi: brischik, meaning_ne: 'समर्पित; अर्पण गरिएकी', meaning_en: 'dedicated; offered'}
+- {name: नीरा, slug: neera, en: Neera, syl: नी, rashi: brischik, meaning_ne: 'पानी; जल', meaning_en: 'water'}
+- {name: नुपुर, slug: nupur, en: Nupur, syl: नु, rashi: brischik, meaning_ne: 'खुट्टामा लगाउने घुँघुरुको गहना', meaning_en: 'an anklet with small bells'}
+- {name: नेहा, slug: neha, en: Neha, syl: ने, rashi: brischik, meaning_ne: 'स्नेह; माया', meaning_en: 'affection; love'}
+- {name: नेत्रा, slug: netra, en: Netra, syl: ने, rashi: brischik, meaning_ne: 'आँखा', meaning_en: 'eye'}
+- {name: यामिनी, slug: yamini, en: Yamini, syl: या, rashi: brischik, meaning_ne: 'रात', meaning_en: 'night'}
+- {name: युक्ता, slug: yukta, en: Yukta, syl: यु, rashi: brischik, meaning_ne: 'जोडिएकी; सहित', meaning_en: 'joined; endowed with'}
+# --- Dhanu ---
+- {name: भावना, slug: bhawana, en: Bhawana, syl: भा, rashi: dhanu, meaning_ne: 'भाव; अनुभूति', meaning_en: 'feeling; emotion'}
+- {name: भारती, slug: bharati, en: Bharati, syl: भा, rashi: dhanu, meaning_ne: 'देवी सरस्वतीको एक नाम', meaning_en: 'a name of goddess Saraswati'}
+- {name: भुवना, slug: bhuwana, en: Bhuwana, syl: भु, rashi: dhanu, meaning_ne: 'पृथ्वी; संसार', meaning_en: 'the earth; the world'}
+- {name: भूमि, slug: bhumi, en: Bhumi, syl: भु, rashi: dhanu, meaning_ne: 'पृथ्वी; जमिन', meaning_en: 'earth; land'}
+- {name: भूमिजा, slug: bhumija, en: Bhumija, syl: भु, rashi: dhanu, meaning_ne: 'पृथ्वीबाट जन्मेकी; सीताको एक नाम', meaning_en: 'born of the earth; a name of Sita'}
+- {name: धारा, slug: dhara, en: Dhara, syl: धा, rashi: dhanu, meaning_ne: 'पानीको धारा; प्रवाह', meaning_en: 'a stream; flow'}
+- {name: धारिणी, slug: dharini, en: Dharini, syl: धा, rashi: dhanu, meaning_ne: 'धारण गर्ने; पृथ्वी', meaning_en: 'one who bears; the earth'}
+- {name: धात्री, slug: dhatri, en: Dhatri, syl: धा, rashi: dhanu, meaning_ne: 'आमा; पालन गर्ने; पृथ्वी', meaning_en: 'mother; nurse; the earth'}
+- {name: फाल्गुनी, slug: falguni, en: Falguni, syl: फा, rashi: dhanu, meaning_ne: 'फागुन महिनासँग सम्बन्धित; एक नक्षत्रको नाम', meaning_en: 'of the Phalguna month; name of a nakshatra'}
+- {name: योगिता, slug: yogita, en: Yogita, syl: यो, rashi: dhanu, meaning_ne: 'योगको अभ्यास गर्ने', meaning_en: 'one who practises yoga'}
+- {name: योजना, slug: yojana, en: Yojana, syl: यो, rashi: dhanu, meaning_ne: 'योजना; कार्ययोजना', meaning_en: 'a plan'}
+- {name: योगेश्वरी, slug: yogeshwari, en: Yogeshwari, syl: यो, rashi: dhanu, meaning_ne: 'योगकी स्वामिनी; देवी', meaning_en: 'mistress of yoga; goddess'}
+# --- Makar ---
+- {name: जानकी, slug: janaki, en: Janaki, syl: जा, rashi: makar, meaning_ne: 'जनककी छोरी; सीताको एक नाम', meaning_en: 'daughter of Janaka; a name of Sita'}
+- {name: जाह्नवी, slug: jahnavi, en: Jahnavi, syl: जा, rashi: makar, meaning_ne: 'गङ्गा नदीको एक नाम', meaning_en: 'a name of the river Ganga'}
+- {name: जागृति, slug: jagriti, en: Jagriti, syl: जा, rashi: makar, meaning_ne: 'जागरण; सचेतता', meaning_en: 'awakening; awareness'}
+- {name: जिज्ञासा, slug: jigyasa, en: Jigyasa, syl: जी, rashi: makar, meaning_ne: 'जान्ने इच्छा', meaning_en: 'curiosity; desire to know'}
+- {name: जीविका, slug: jeevika, en: Jeevika, syl: जी, rashi: makar, meaning_ne: 'जीविका; आजीविका', meaning_en: 'livelihood'}
+- {name: खुसी, slug: khushi, en: Khushi, syl: खु, rashi: makar, meaning_ne: 'आनन्द; प्रसन्नता', meaning_en: 'joy; happiness', origin: 'फारसी / Persian'}
+- {name: खुशबू, slug: khushboo, en: Khushboo, syl: खु, rashi: makar, meaning_ne: 'सुगन्ध', meaning_en: 'fragrance', origin: 'फारसी / Persian'}
+- {name: गायत्री, slug: gayatri, en: Gayatri, syl: गा, rashi: makar, meaning_ne: 'वैदिक छन्द र गायत्री मन्त्र; देवीको नाम', meaning_en: 'a Vedic metre and the Gayatri mantra; a goddess'}
+- {name: गार्गी, slug: gargi, en: Gargi, syl: गा, rashi: makar, meaning_ne: 'वैदिक कालकी विदुषी गार्गीको नाम', meaning_en: 'name of Gargi, a learned woman of the Vedic era'}
+- {name: गाथा, slug: gatha, en: Gatha, syl: गा, rashi: makar, meaning_ne: 'कथागीत; वर्णन', meaning_en: 'a ballad; narrative verse'}
+- {name: गीता, slug: geeta, en: Geeta, syl: गी, rashi: makar, meaning_ne: 'गीत; भगवद्गीता', meaning_en: 'song; the Bhagavad Gita'}
+- {name: गीतिका, slug: geetika, en: Geetika, syl: गी, rashi: makar, meaning_ne: 'सानो गीत', meaning_en: 'a short song'}
+- {name: गिरिजा, slug: girija, en: Girija, syl: गी, rashi: makar, meaning_ne: 'पर्वतकी छोरी; पार्वतीको एक नाम', meaning_en: 'daughter of the mountain; a name of Parvati'}
+- {name: गीताञ्जली, slug: geetanjali, en: Geetanjali, syl: गी, rashi: makar, meaning_ne: 'गीतको अर्पण', meaning_en: 'an offering of songs'}
+# --- Kumbha ---
+- {name: गुणवती, slug: gunwati, en: Gunwati, syl: गु, rashi: kumbha, meaning_ne: 'गुण भएकी', meaning_en: 'virtuous; full of good qualities'}
+- {name: गोमती, slug: gomati, en: Gomati, syl: गो, rashi: kumbha, meaning_ne: 'एउटा पवित्र नदीको नाम', meaning_en: 'name of a sacred river', origin: 'नदीको नाम / river name'}
+- {name: गोदावरी, slug: godavari, en: Godavari, syl: गो, rashi: kumbha, meaning_ne: 'भारतको एउटा प्रसिद्ध नदीको नाम', meaning_en: 'name of a major river in India', origin: 'नदीको नाम / river name'}
+- {name: गोपिका, slug: gopika, en: Gopika, syl: गो, rashi: kumbha, meaning_ne: 'ग्वालिनी; कृष्णकी सखी', meaning_en: 'a cowherd girl; companion of Krishna'}
+- {name: सावित्री, slug: savitri, en: Savitri, syl: सा, rashi: kumbha, meaning_ne: 'महाभारतकी पात्र सावित्रीको नाम', meaning_en: 'name of Savitri of the Mahabharata'}
+- {name: सागरिका, slug: sagarika, en: Sagarika, syl: सा, rashi: kumbha, meaning_ne: 'सागरसँग सम्बन्धित', meaning_en: 'of the ocean'}
+- {name: सारिका, slug: sarika, en: Sarika, syl: सा, rashi: kumbha, meaning_ne: 'मैना चरा', meaning_en: 'the myna bird'}
+- {name: साधना, slug: sadhana, en: Sadhana, syl: सा, rashi: kumbha, meaning_ne: 'साधना; अभ्यास', meaning_en: 'spiritual practice; discipline'}
+- {name: साक्षी, slug: sakshi, en: Sakshi, syl: सा, rashi: kumbha, meaning_ne: 'साक्षी; प्रमाण', meaning_en: 'witness'}
+- {name: सान्त्वना, slug: santwana, en: Santwana, syl: सा, rashi: kumbha, meaning_ne: 'सान्त्वना; ढाडस', meaning_en: 'consolation; comfort'}
+- {name: सीता, slug: sita, en: Sita, syl: सी, rashi: kumbha, meaning_ne: 'हलोको धर्सो; जनककी छोरी, रामायणकी पात्र', meaning_en: 'a furrow; daughter of Janaka in the Ramayana'}
+- {name: सिन्धु, slug: sindhu, en: Sindhu, syl: सी, rashi: kumbha, meaning_ne: 'सिन्धु नदी; समुद्र', meaning_en: 'the Indus river; the sea'}
+- {name: सिर्जना, slug: sirjana, en: Sirjana, syl: सी, rashi: kumbha, meaning_ne: 'रचना; सिर्जना', meaning_en: 'creation'}
+- {name: सितारा, slug: sitara, en: Sitara, syl: सी, rashi: kumbha, meaning_ne: 'तारा', meaning_en: 'star', origin: 'फारसी / Persian'}
+- {name: सिद्धि, slug: siddhi, en: Siddhi, syl: सी, rashi: kumbha, meaning_ne: 'सफलता; सिद्धि', meaning_en: 'success; attainment'}
+- {name: सिया, slug: siya, en: Siya, syl: सी, rashi: kumbha, meaning_ne: 'सीताको छोटो रूप', meaning_en: 'a short form of Sita'}
+- {name: सुनीता, slug: sunita, en: Sunita, syl: सु, rashi: kumbha, meaning_ne: 'राम्रो आचरण भएकी', meaning_en: 'of good conduct'}
+- {name: सुमित्रा, slug: sumitra, en: Sumitra, syl: सु, rashi: kumbha, meaning_ne: 'रामायणमा लक्ष्मणकी आमाको नाम; असल मित्र', meaning_en: 'mother of Lakshmana in the Ramayana; a good friend'}
+- {name: सुषमा, slug: sushma, en: Sushma, syl: सु, rashi: kumbha, meaning_ne: 'सौन्दर्य; शोभा', meaning_en: 'beauty; grace'}
+- {name: सुरभि, slug: surabhi, en: Surabhi, syl: सु, rashi: kumbha, meaning_ne: 'सुगन्ध; कामधेनु गाई', meaning_en: 'fragrance; the divine cow'}
+- {name: सुजाता, slug: sujata, en: Sujata, syl: सु, rashi: kumbha, meaning_ne: 'असल कुलमा जन्मेकी', meaning_en: 'well-born'}
+- {name: सुप्रिया, slug: supriya, en: Supriya, syl: सु, rashi: kumbha, meaning_ne: 'अति प्रिय', meaning_en: 'very dear'}
+- {name: सुभद्रा, slug: subhadra, en: Subhadra, syl: सु, rashi: kumbha, meaning_ne: 'कल्याणकारी; कृष्णकी बहिनी', meaning_en: 'auspicious; sister of Krishna'}
+- {name: सुनन्दा, slug: sunanda, en: Sunanda, syl: सु, rashi: kumbha, meaning_ne: 'अति आनन्दित', meaning_en: 'very joyful'}
+- {name: सुहासिनी, slug: suhasini, en: Suhasini, syl: सु, rashi: kumbha, meaning_ne: 'राम्रो हाँसो भएकी', meaning_en: 'of a lovely smile'}
+- {name: सुस्मिता, slug: susmita, en: Susmita, syl: सु, rashi: kumbha, meaning_ne: 'राम्रो मुस्कान भएकी', meaning_en: 'of a sweet smile'}
+- {name: सुचित्रा, slug: suchitra, en: Suchitra, syl: सु, rashi: kumbha, meaning_ne: 'सुन्दर चित्र भएकी', meaning_en: 'one with a beautiful picture-like look'}
+- {name: सुरक्षा, slug: suraksha, en: Suraksha, syl: सु, rashi: kumbha, meaning_ne: 'रक्षा; सुरक्षा', meaning_en: 'protection; safety'}
+- {name: सेवा, slug: sewa, en: Sewa, syl: से, rashi: kumbha, meaning_ne: 'सेवा; सहयोग', meaning_en: 'service; helping'}
+- {name: सोभा, slug: sobha, en: Sobha, syl: सो, rashi: kumbha, meaning_ne: 'शोभा; सुन्दरता', meaning_en: 'beauty; splendour'}
+- {name: दामिनी, slug: damini, en: Damini, syl: दा, rashi: kumbha, meaning_ne: 'बिजुली', meaning_en: 'lightning'}
+# --- Meen ---
+- {name: दीपा, slug: deepa, en: Deepa, syl: दी, rashi: meen, meaning_ne: 'दियो; बत्ती', meaning_en: 'a lamp'}
+- {name: दीपिका, slug: deepika, en: Deepika, syl: दी, rashi: meen, meaning_ne: 'सानो दियो; उज्यालो', meaning_en: 'a small lamp; light'}
+- {name: दीक्षा, slug: diksha, en: Diksha, syl: दी, rashi: meen, meaning_ne: 'गुरुबाट पाइने दीक्षा; समर्पण', meaning_en: 'initiation; dedication'}
+- {name: दिव्या, slug: divya, en: Divya, syl: दी, rashi: meen, meaning_ne: 'दिव्य; अलौकिक', meaning_en: 'divine; radiant'}
+- {name: दिशा, slug: disha, en: Disha, syl: दी, rashi: meen, meaning_ne: 'दिशा; तर्फ', meaning_en: 'direction'}
+- {name: दीप्ति, slug: deepti, en: Deepti, syl: दी, rashi: meen, meaning_ne: 'चमक; प्रकाश', meaning_en: 'brightness; radiance'}
+- {name: दुर्गा, slug: durga, en: Durga, syl: दु, rashi: meen, meaning_ne: 'शक्तिकी देवी', meaning_en: 'the goddess of power'}
+- {name: झरना, slug: jharana, en: Jharana, syl: झ, rashi: meen, meaning_ne: 'झर्ने पानी; झरना', meaning_en: 'a waterfall; spring', origin: 'नेपाली / Nepali'}
+- {name: देवी, slug: devi, en: Devi, syl: दे, rashi: meen, meaning_ne: 'देवी; भगवती', meaning_en: 'goddess'}
+- {name: देविका, slug: devika, en: Devika, syl: दे, rashi: meen, meaning_ne: 'सानी देवी', meaning_en: 'a little goddess'}
+- {name: देवयानी, slug: devayani, en: Devayani, syl: दे, rashi: meen, meaning_ne: 'महाभारतमा शुक्राचार्यकी छोरीको नाम', meaning_en: 'name of the daughter of Shukracharya in the Mahabharata'}
+- {name: देवकी, slug: devaki, en: Devaki, syl: दे, rashi: meen, meaning_ne: 'भगवान् कृष्णकी आमाको नाम', meaning_en: 'name of the mother of Krishna'}
+- {name: चाँदनी, slug: chandni, en: Chandni, syl: चा, rashi: meen, meaning_ne: 'जुनको उज्यालो', meaning_en: 'moonlight', origin: 'संस्कृतबाट / from Sanskrit'}
+- {name: चारु, slug: charu, en: Charu, syl: चा, rashi: meen, meaning_ne: 'सुन्दर; मनमोहक', meaning_en: 'beautiful; charming'}
+- {name: चारुलता, slug: charulata, en: Charulata, syl: चा, rashi: meen, meaning_ne: 'सुन्दर लता', meaning_en: 'a beautiful creeper'}
+- {name: चामुण्डा, slug: chamunda, en: Chamunda, syl: चा, rashi: meen, meaning_ne: 'देवी दुर्गाको एक रूप', meaning_en: 'a form of goddess Durga'}
+- {name: चाहना, slug: chahana, en: Chahana, syl: चा, rashi: meen, meaning_ne: 'इच्छा; चाहना', meaning_en: 'wish; desire', origin: 'नेपाली / Nepali'}
+- {name: चिन्मयी, slug: chinmayi, en: Chinmayi, syl: ची, rashi: meen, meaning_ne: 'ज्ञानमयी; चेतनायुक्त', meaning_en: 'full of knowledge; conscious'}
+- {name: चित्रा, slug: chitra, en: Chitra, syl: ची, rashi: meen, meaning_ne: 'चित्र; एक नक्षत्रको नाम', meaning_en: 'a picture; name of a nakshatra'}
+- {name: चिन्तना, slug: chintana, en: Chintana, syl: ची, rashi: meen, meaning_ne: 'सोचाइ; चिन्तन', meaning_en: 'thought; contemplation'}

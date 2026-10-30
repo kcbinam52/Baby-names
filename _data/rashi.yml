@@ -1,48 +1,96 @@
 - slug: mesh
   ne: मेष
   en: Aries
-  letters: "चु चे चो ला ली लु ले लो अ"
+  letters: 'चु चे चो ला ली लु ले लो अ'
+  naks:
+    - {n: 'अश्विनी', e: 'Ashwini', l: 'चु चे चो ला'}
+    - {n: 'भरणी', e: 'Bharani', l: 'ली लु ले लो'}
+    - {n: 'कृत्तिका (पहिलो पद)', e: 'Krittika (1st pada)', l: 'अ'}
 - slug: brish
   ne: वृष
   en: Taurus
-  letters: "इ उ ए ओ वा वी वु वे वो"
+  letters: 'इ उ ए ओ वा वी वु वे वो'
+  naks:
+    - {n: 'कृत्तिका (२–४ पद)', e: 'Krittika (2nd to 4th pada)', l: 'इ उ ए'}
+    - {n: 'रोहिणी', e: 'Rohini', l: 'ओ वा वी वु'}
+    - {n: 'मृगशिरा (१–२ पद)', e: 'Mrigashira (1st and 2nd pada)', l: 'वे वो'}
 - slug: mithun
   ne: मिथुन
   en: Gemini
-  letters: "का की कु घ ङ छ के को हा"
+  letters: 'का की कु घ ङ छ के को हा'
+  naks:
+    - {n: 'मृगशिरा (३–४ पद)', e: 'Mrigashira (3rd and 4th pada)', l: 'का की'}
+    - {n: 'आर्द्रा', e: 'Ardra', l: 'कु घ ङ छ'}
+    - {n: 'पुनर्वसु (१–३ पद)', e: 'Punarvasu (1st to 3rd pada)', l: 'के को हा'}
 - slug: karkat
   ne: कर्कट
   en: Cancer
-  letters: "ही हु हे हो डा डी डु डे डो"
+  letters: 'ही हु हे हो डा डी डु डे डो'
+  naks:
+    - {n: 'पुनर्वसु (४ पद)', e: 'Punarvasu (4th pada)', l: 'ही'}
+    - {n: 'पुष्य', e: 'Pushya', l: 'हु हे हो डा'}
+    - {n: 'आश्लेषा', e: 'Ashlesha', l: 'डी डु डे डो'}
 - slug: singha
   ne: सिंह
   en: Leo
-  letters: "मा मी मु मे मो टा टी टु टे"
+  letters: 'मा मी मु मे मो टा टी टु टे'
+  naks:
+    - {n: 'मघा', e: 'Magha', l: 'मा मी मु मे'}
+    - {n: 'पूर्वाफाल्गुनी', e: 'Purva Phalguni', l: 'मो टा टी टु'}
+    - {n: 'उत्तराफाल्गुनी (१ पद)', e: 'Uttara Phalguni (1st pada)', l: 'टे'}
 - slug: kanya
   ne: कन्या
   en: Virgo
-  letters: "टो पा पी पु ष ण ठ पे पो"
+  letters: 'टो पा पी पु ष ण ठ पे पो'
+  naks:
+    - {n: 'उत्तराफाल्गुनी (२–४ पद)', e: 'Uttara Phalguni (2nd to 4th pada)', l: 'टो पा पी'}
+    - {n: 'हस्त', e: 'Hasta', l: 'पु ष ण ठ'}
+    - {n: 'चित्रा (१–२ पद)', e: 'Chitra (1st and 2nd pada)', l: 'पे पो'}
 - slug: tula
   ne: तुला
   en: Libra
-  letters: "रा री रु रे रो ता ती तु ते"
+  letters: 'रा री रु रे रो ता ती तु ते'
+  naks:
+    - {n: 'चित्रा (३–४ पद)', e: 'Chitra (3rd and 4th pada)', l: 'रा री'}
+    - {n: 'स्वाती', e: 'Swati', l: 'रु रे रो ता'}
+    - {n: 'विशाखा (१–३ पद)', e: 'Vishakha (1st to 3rd pada)', l: 'ती तु ते'}
 - slug: brischik
   ne: वृश्चिक
   en: Scorpio
-  letters: "तो ना नी नु ने नो या यी यु"
+  letters: 'तो ना नी नु ने नो या यी यु'
+  naks:
+    - {n: 'विशाखा (४ पद)', e: 'Vishakha (4th pada)', l: 'तो'}
+    - {n: 'अनुराधा', e: 'Anuradha', l: 'ना नी नु ने'}
+    - {n: 'ज्येष्ठा', e: 'Jyeshtha', l: 'नो या यी यु'}
 - slug: dhanu
   ne: धनु
   en: Sagittarius
-  letters: "ये यो भा भी भु धा फा ढा भे"
+  letters: 'ये यो भा भी भु धा फा ढा भे'
+  naks:
+    - {n: 'मूल', e: 'Mula', l: 'ये यो भा भी'}
+    - {n: 'पूर्वाषाढा', e: 'Purva Ashadha', l: 'भु धा फा ढा'}
+    - {n: 'उत्तराषाढा (१ पद)', e: 'Uttara Ashadha (1st pada)', l: 'भे'}
 - slug: makar
   ne: मकर
   en: Capricorn
-  letters: "भो जा जी खी खु खे खो गा गी"
+  letters: 'भो जा जी खी खु खे खो गा गी'
+  naks:
+    - {n: 'उत्तराषाढा (२–४ पद)', e: 'Uttara Ashadha (2nd to 4th pada)', l: 'भो जा जी'}
+    - {n: 'श्रवण', e: 'Shravana', l: 'खी खु खे खो'}
+    - {n: 'धनिष्ठा (१–२ पद)', e: 'Dhanishta (1st and 2nd pada)', l: 'गा गी'}
 - slug: kumbha
   ne: कुम्भ
   en: Aquarius
-  letters: "गु गे गो सा सी सु से सो दा"
+  letters: 'गु गे गो सा सी सु से सो दा'
+  naks:
+    - {n: 'धनिष्ठा (३–४ पद)', e: 'Dhanishta (3rd and 4th pada)', l: 'गु गे'}
+    - {n: 'शतभिषा', e: 'Shatabhisha', l: 'गो सा सी सु'}
+    - {n: 'पूर्वभाद्रपदा (१–३ पद)', e: 'Purva Bhadrapada (1st to 3rd pada)', l: 'से सो दा'}
 - slug: meen
   ne: मीन
   en: Pisces
-  letters: "दी दु थ झ ञ दे दो चा ची"
+  letters: 'दी दु थ झ ञ दे दो चा ची'
+  naks:
+    - {n: 'पूर्वभाद्रपदा (४ पद)', e: 'Purva Bhadrapada (4th pada)', l: 'दी'}
+    - {n: 'उत्तरभाद्रपदा', e: 'Uttara Bhadrapada', l: 'दु थ झ ञ'}
+    - {n: 'रेवती', e: 'Revati', l: 'दे दो चा ची'}

@@ -1,11 +1,11 @@
-{%- assign r = site.data.rashi | where: "slug", page.rashi | first -%}
-{%- assign list = site.data.names | where: "rashi", page.rashi | sort: "name" -%}
+{%- assign r = site.data.rashi | where: 'slug', page.rashi | first -%}
+{%- assign list = site.data.names | where: 'rashi', page.rashi | sort: 'name' -%}
 <h2>{{ r.ne }} राशिका छोरीका नाम <span class="en">/ Girl names for {{ r.slug | capitalize }} rashi</span></h2>
 <div class="tw">
 <table>
 <thead><tr><th>नाम <small>Name</small></th><th>अर्थ <small>Meaning</small></th><th>उत्पत्ति <small>Origin</small></th><th>अक्षर <small>Letter</small></th></tr></thead>
 <tbody>
-{% for n in list %}<tr><td><strong>{{ n.name }}</strong><br><small>{{ n.en }}</small></td><td>{{ n.meaning_ne }}<br><small>{{ n.meaning_en }}</small>{% if n.status == 'verify' %}<br><em>अर्थ पुष्टि गर्नुहोस् / verify meaning</em>{% endif %}</td><td>{{ n.origin }}</td><td>{{ n.syl }}</td></tr>
+{% for n in list %}<tr><td><strong>{{ n.name }}</strong><br><small>{{ n.en }}</small></td><td>{{ n.meaning_ne }}<br><small>{{ n.meaning_en }}</small>{% if n.status == 'verify' %}<br><em>अर्थ पुष्टि गर्नुहोस् / verify meaning</em>{% endif %}</td><td>{{ n.origin | default: 'संस्कृत / Sanskrit' }}</td><td>{{ n.syl }}</td></tr>
 {% endfor %}</tbody>
 </table>
 </div>

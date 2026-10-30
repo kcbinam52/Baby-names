@@ -1,0 +1,14 @@
+{%- assign all = site.data.rashi -%}
+{%- for x in all -%}{%- if x.slug == page.rashi -%}{%- assign i = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign pi = i | minus: 1 -%}{%- if pi < 0 -%}{%- assign pi = 11 -%}{%- endif -%}
+{%- assign ni = i | plus: 1 -%}{%- if ni > 11 -%}{%- assign ni = 0 -%}{%- endif -%}
+{%- assign pv = all[pi] -%}{%- assign nx = all[ni] -%}
+<h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
+<ul class="rel">
+<li><a href="/rashi/{{ pv.slug }}/">{{ pv.ne }} राशिका नाम</a> <span class="en" lang="en">Names for {{ pv.slug | capitalize }} rashi</span></li>
+<li><a href="/rashi/{{ nx.slug }}/">{{ nx.ne }} राशिका नाम</a> <span class="en" lang="en">Names for {{ nx.slug | capitalize }} rashi</span></li>
+<li><a href="/tools/rashi-finder/">नामको राशि खोज्ने साधन</a> <span class="en" lang="en">Rashi finder tool</span></li>
+<li><a href="/guide/naming-ceremony/">नामकरण / न्वारन गाइड</a> <span class="en" lang="en">Naming ceremony guide</span></li>
+<li><a href="/about/">हाम्रोबारे</a> <span class="en" lang="en">About us</span></li>
+<li><a href="/disclaimer/">अस्वीकरण</a> <span class="en" lang="en">Disclaimer</span></li>
+</ul>
