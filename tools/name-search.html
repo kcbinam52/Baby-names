@@ -1,0 +1,117 @@
+---
+title: 'नेपाली बच्चाको नाम खोज्नुहोस् | Advanced Baby Name Search'
+description: 'छोरा र छोरीका नेपाली नाम अर्थसहित नाम, अर्थ, पहिलो अक्षर, राशि र भाषाअनुसार खोज्नुहोस्। Search Nepali baby names by name, meaning, gender, first letter, rashi and language.'
+permalink: /tools/name-search/
+crumb: 'नाम खोज्ने / Baby name search'
+updated: 2026-10-31
+---
+<h1>बच्चाको नाम खोज्नुहोस् <span class="en">(Baby Name Search)</span></h1>
+<p>नाम वा अर्थ लेखेर, छोरा वा छोरी छानेर, पहिलो अक्षर र राशि अनुसार नाम खोज्नुहोस्। नेपाली र अंग्रेजी दुवैमा खोज्न सकिन्छ।</p>
+<p class="en" lang="en">Search the baby-name catalogue by name or meaning. Filter by gender, first letter, rashi and language in Nepali or English.</p>
+
+<div class="card name-search-card">
+  <form id="name-search-form" class="name-search-form" role="search">
+    <label for="name-query">नाम वा अर्थ / Name or meaning</label>
+    <input id="name-query" type="search" placeholder="जस्तै: प्रकाश, light, खुशी..." autocomplete="off">
+    <div class="search-filter-grid">
+      <div>
+        <label for="name-gender">लिङ्ग / Gender</label>
+        <select id="name-gender">
+          <option value="all">सबै / All</option>
+          <option value="boy">छोरा / Boy</option>
+          <option value="girl">छोरी / Girl</option>
+        </select>
+      </div>
+      <div>
+        <label for="name-rashi">राशि / Rashi</label>
+        <select id="name-rashi">
+          <option value="all">सबै राशि / All rashis</option>
+          {% for r in site.data.rashi %}<option value="{{ r.slug }}">{{ r.ne }} / {{ r.en }}</option>{% endfor %}
+        </select>
+      </div>
+      <div>
+        <label for="name-letter">पहिलो अक्षर / First letter</label>
+        <input id="name-letter" type="text" maxlength="20" placeholder="जस्तै: क, अ, Ka">
+      </div>
+      <div>
+        <label for="name-language">भाषा / Search language</label>
+        <select id="name-language">
+          <option value="both">नेपाली र अंग्रेजी / Both</option>
+          <option value="ne">नेपाली / Nepali</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-actions">
+      <button class="go" type="submit">नाम खोज्नुहोस् / Search names</button>
+      <button class="search-reset" type="reset">सबै हटाउनुहोस् / Clear filters</button>
+    </div>
+  </form>
+</div>
+
+<p id="name-search-count" class="search-count" aria-live="polite"></p>
+<div id="name-search-results" class="name-results" aria-live="polite"></div>
+<noscript><p>यो खोज साधन चलाउन JavaScript आवश्यक छ। / JavaScript is required to use this search tool.</p></noscript>
+
+<h2>खोज्ने तरिका <span class="en">/ Search tips</span></h2>
+<ul>
+  <li>नेपाली नाम, अंग्रेजी हिज्जे वा अर्थको शब्द लेख्नुहोस्।</li>
+  <li>लिङ्ग र राशि छानेर नतिजा छोट्याउनुहोस्।</li>
+  <li>पहिलो अक्षरमा देवनागरी अक्षर वा English spelling लेख्न सक्नुहुन्छ।</li>
+</ul>
+<p class="en" lang="en">Enter a Nepali name, its English spelling or a meaning keyword. Narrow the results with the gender and rashi filters. The first-letter filter accepts Devanagari or English letters.</p>
+<p><a href="/tools/rashi-finder/">राशि खोज्ने साधन / Rashi Finder</a> · <a href="/tools/parent-name-matcher/">आमाबुबाको नामबाट नाम मिलाउने / Parent Name Matcher</a></p>
+
+{% raw %}
+<script>
+(function(){
+  var names = [
+{% endraw %}{% assign first_name = true %}{% for n in site.data.names %}{% unless first_name %},{% endunless %}{"name":{{ n.name | jsonify }},"en":{{ n.en | jsonify }},"gender":"girl","meaning":{{ n.meaning_ne | jsonify }},"meaningEn":{{ n.meaning_en | jsonify }},"slug":{{ n.slug | jsonify }},"rashi":{{ n.rashi | jsonify }},"syl":{{ n.syl | jsonify }},"origin":{{ n.origin | default: 'संस्कृत / Sanskrit' | jsonify }}}{% assign first_name = false %}{% endfor %}{% for n in site.data.names_more %}{% if n.gender == 'boy' or n.gender == 'girl' %}{% unless first_name %},{% endunless %}{"name":{{ n.name | jsonify }},"en":{{ n.en | jsonify }},"gender":{{ n.gender | jsonify }},"meaning":{{ n.meaning_ne | jsonify }},"meaningEn":{{ n.meaning_en | jsonify }},"slug":{{ n.slug | jsonify }},"rashi":{{ n.rashi | jsonify }},"syl":{{ n.syl | jsonify }},"origin":{{ n.origin | default: 'संस्कृत / Sanskrit' | jsonify }}}{% assign first_name = false %}{% endif %}{% endfor %}{% raw %}
+  ];
+  var rashiNames = {
+{% endraw %}{% for r in site.data.rashi %}{% unless forloop.first %},{% endunless %}{{ r.slug | jsonify }}:{{ r.ne | append: ' / ' | append: r.en | jsonify }}{% endfor %}{% raw %}
+  };
+  var form=document.getElementById('name-search-form');
+  var query=document.getElementById('name-query');
+  var gender=document.getElementById('name-gender');
+  var rashi=document.getElementById('name-rashi');
+  var letter=document.getElementById('name-letter');
+  var language=document.getElementById('name-language');
+  var results=document.getElementById('name-search-results');
+  var count=document.getElementById('name-search-count');
+  function norm(s){
+    return String(s||'').toLocaleLowerCase().normalize('NFC').replace(/[ँंः]/g,'').replace(/[ािीुूृेैोौंः]/g,'');
+  }
+  function escapeText(s){return String(s==null?'':s);}
+  function matches(n){
+    var q=norm(query.value),l=norm(letter.value);
+    var searchable=language.value==='ne'?[n.name,n.meaning]:language.value==='en'?[n.en,n.meaningEn]:[n.name,n.en,n.meaning,n.meaningEn];
+    if(q&&!searchable.some(function(v){return norm(v).indexOf(q)!==-1;}))return false;
+    if(gender.value!=='all'&&n.gender!==gender.value)return false;
+    if(rashi.value!=='all'&&n.rashi!==rashi.value)return false;
+    if(l){
+      var letterFields=[n.syl,n.name,n.en].map(norm);
+      if(!letterFields.some(function(v){return v.indexOf(l)===0;}))return false;
+    }
+    return true;
+  }
+  function render(){
+    var found=names.filter(matches);
+    count.textContent=found.length+' वटा नाम भेटिए / '+found.length+' names found';
+    if(!found.length){results.innerHTML='<div class="card"><p>मिल्ने नाम भेटिएन। फिल्टर परिवर्तन गरेर फेरि खोज्नुहोस्।</p><p class="en">No matching names. Try changing your search or filters.</p></div>';return;}
+    var shown=found.slice(0,120);
+    var html=shown.map(function(n){
+      var r=rashiNames[n.rashi]||'';
+      var genderLabel=n.gender==='boy'?'छोरा / Boy':'छोरी / Girl';
+      return '<article class="card name-result"><div class="name-result-head"><h2>'+escapeText(n.name)+' <span class="en">('+escapeText(n.en)+')</span></h2><span class="name-gender">'+genderLabel+'</span></div><p><strong>अर्थ:</strong> '+escapeText(n.meaning||'अर्थ पुष्टि गर्नुहोस्')+'</p><p class="en" lang="en"><strong>Meaning:</strong> '+escapeText(n.meaningEn||'Please verify meaning')+'</p><p class="name-meta">राशि: '+escapeText(r)+' · नामाक्षर: '+escapeText(n.syl||'—')+'</p></article>';
+    }).join('');
+    results.innerHTML=html+(found.length>shown.length?'<p class="en">Showing the first '+shown.length+' of '+found.length+' matches. Add another filter to narrow the results.</p>':'');
+  }
+  form.addEventListener('submit',function(e){e.preventDefault();render();});
+  [gender,rashi,language].forEach(function(el){el.addEventListener('change',render);});
+  [query,letter].forEach(function(el){el.addEventListener('input',render);});
+  form.addEventListener('reset',function(){window.setTimeout(render,0);});
+  render();
+})();
+</script>
+{% endraw %}
