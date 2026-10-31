@@ -1,4 +1,2 @@
-{% if page.rashi %}{% include rashi-related.html %}{% elsif page.letter %}{% include letter-related.html %}{% elsif page.related %}<h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
-<ul class="rel">{% for r in page.related %}
-<li><a href="{{ r.url }}">{{ r.ne }}</a> <span class="en" lang="en">{{ r.en }}</span></li>{% endfor %}
-</ul>{% endif %}
+{% if page.rashi %}{% include rashi-related.html %}{% elsif page.letter %}{% include letter-related.html %}{% elsif page.person %}{% include name-related.html %}{% elsif page.related %}{%- capture rel_items -%}{% for r in page.related %}{% assign live = site.pages | where: 'url', r.url | first %}{% if live %}<li><a href="{{ r.url }}">{{ r.ne }}</a> <span class="en" lang="en">{{ r.en }}</span></li>{% endif %}{% endfor %}{%- endcapture -%}{% if rel_items != '' %}<h2>सम्बन्धित पृष्ठहरू <span class="en">/ Related pages</span></h2>
+<ul class="rel">{{ rel_items }}</ul>{% endif %}{% endif %}

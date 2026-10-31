@@ -14,6 +14,18 @@ google_site_verification: ''   # Search Console HTML-tag token
 bing_site_verification: ''     # Bing Webmaster token
 ga4_id: ''                     # e.g. G-XXXXXXXXXX
 
+# Contact and editor details. Fill these in: they appear on the Contact page,
+# in the page footer byline and in the site schema. Leave empty to hide them.
+contact_email: ''
+github_issues: 'https://github.com/kcbinam52/Baby-names/issues/new'
+author_name: ''
+author_bio_ne: ''
+author_bio_en: ''
+
+# One page per name is built at /name/<slug>/. A name page is kept out of Google
+# unless it has its own tip_ne text in the data, or this is set to true.
+index_all_names: false
+
 defaults:
   - scope:
       path: ''

@@ -7,11 +7,11 @@
 <a class="skip" href="#main">मुख्य सामग्रीमा जानुहोस् / Skip to content</a>
 {% include header.html %}
 <main id="main" class="w">
-{% unless page.url == '/' or page.noindex %}{% include breadcrumb.html %}{% endunless %}
+{% unless page.url == '/' or page.url == '/404.html' %}{% include breadcrumb.html %}{% endunless %}
 {{ content }}
 {% include related.html %}
-{% unless page.url == '/' or page.noindex %}{% include share.html %}{% endunless %}
-{% unless page.noindex %}{% include ad.html n=3 %}{% endunless %}
+{% unless page.url == '/' or page.url == '/404.html' %}{% include share.html %}{% endunless %}
+{% unless page.url == '/404.html' %}{% include ad.html n=3 %}{% include author-box.html %}{% endunless %}
 </main>
 {% include footer.html %}
 </body>

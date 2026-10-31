@@ -1,0 +1,83 @@
+{%- assign e = site.data.names | where: 'slug', page.person | first -%}
+{%- if e == nil -%}{%- assign e = site.data.names_more | where: 'slug', page.person | first -%}{%- endif -%}
+{%- assign gender = e.gender | default: 'girl' -%}
+{%- if gender == 'girl' -%}{%- assign gne = 'छोरीको' -%}{%- assign gbi = 'छोरी / Girl' -%}{%- else -%}{%- assign gne = 'छोराको' -%}{%- assign gbi = 'छोरा / Boy' -%}{%- endif -%}
+{%- assign r = site.data.rashi | where: 'slug', e.rashi | first -%}
+{%- assign R = r.slug | capitalize -%}
+{%- assign chart = e.syl -%}
+{%- if chart contains '≈' -%}{%- assign chart = chart | split: '≈ ' | last | remove: ')' -%}{%- endif -%}
+{%- assign nk = nil -%}
+{%- for k in r.naks -%}{%- assign ls = k.l | split: ' ' -%}{%- if ls contains chart -%}{%- assign nk = k -%}{%- endif -%}{%- endfor -%}
+{%- assign first = e.name | slice: 0 -%}
+{%- assign lt = site.data.letters | where: 'ch', first | first -%}
+{%- assign origin = e.origin | default: 'संस्कृत / Sanskrit' -%}
+{%- assign pool = '' | split: '' -%}
+{%- if gender == 'girl' -%}{%- for x in site.data.names -%}{%- if x.rashi == e.rashi -%}{%- assign pool = pool | push: x -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+{%- for x in site.data.names_more -%}{%- if x.rashi == e.rashi and x.gender == gender -%}{%- assign pool = pool | push: x -%}{%- endif -%}{%- endfor -%}
+{%- assign pool = pool | sort: 'name' -%}
+{%- for x in pool -%}{%- if x.slug == e.slug -%}{%- assign idx = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign psize = pool.size -%}
+{%- assign nshow = psize | minus: 1 -%}{%- if nshow > 8 -%}{%- assign nshow = 8 -%}{%- endif -%}
+<h1>{{ e.name }} <span class="en">({{ e.en }})</span> नामको अर्थ</h1>
+<p>“{{ e.name }}” एउटा {{ gne }} नाम हो। यसको अर्थ: {{ e.meaning_ne }}। यो नाम {{ r.ne }} राशिको नामाक्षर “{{ chart }}” बाट सुरु हुन्छ।</p>
+<p class="en" lang="en">{{ e.en }} is a {{ gender }} name. Meaning: {{ e.meaning_en }}. Its first letter {{ chart }} falls under {{ R }} ({{ r.en }}) rashi.</p>
+{% if e.status == 'verify' %}<p><em>अर्थ पुष्टि गर्नुहोस् / verify meaning: यो नामको अर्थमा हामी पूर्ण निश्चित छैनौं।</em></p>{% endif %}
+{% include ad.html n=1 %}
+<h2>नामको विवरण <span class="en">/ Name facts</span></h2>
+<div class="tw">
+<table>
+<tbody>
+<tr><th scope="row">नाम <small>Name</small></th><td>{{ e.name }} ({{ e.en }})</td></tr>
+<tr><th scope="row">लिङ्ग <small>Gender</small></th><td>{{ gbi }}</td></tr>
+<tr><th scope="row">अर्थ <small>Meaning</small></th><td>{{ e.meaning_ne }}<br><small>{{ e.meaning_en }}</small></td></tr>
+<tr><th scope="row">उत्पत्ति <small>Origin</small></th><td>{{ origin }}</td></tr>
+<tr><th scope="row">राशि <small>Rashi</small></th><td><a href="/rashi/{{ r.slug }}/">{{ r.ne }}</a> ({{ r.en }})</td></tr>
+<tr><th scope="row">नामाक्षर <small>Letter</small></th><td>{{ chart }}</td></tr>
+{% if nk %}<tr><th scope="row">नक्षत्र <small>Nakshatra</small></th><td>{{ nk.n }} ({{ nk.e }})</td></tr>{% endif %}
+</tbody>
+</table>
+</div>
+{% if e.syl contains '≈' %}<p>नोट: यो नामको सुरुको अक्षरलाई तालिकाको “{{ chart }}” अक्षर मानेर राशि दिइएको छ। पक्का गर्न ज्योतिषीसँग सोध्नुहोस्।</p>
+<p class="en" lang="en">Note: the rashi is given by reading the first sound of this name as the chart letter {{ chart }}. Please confirm with an astrologer.</p>{% endif %}
+{% if e.tip_ne %}<h2>सुझाव <span class="en">/ Tip</span></h2>
+<p>{{ e.tip_ne }}</p>
+{% if e.tip_en %}<p class="en" lang="en">{{ e.tip_en }}</p>{% endif %}{% endif %}
+{% if e.nicknames %}<h2>घरमा बोलाउने नाम <span class="en">/ Nickname ideas</span></h2>
+<p>{{ e.nicknames }}</p>{% endif %}
+{% if e.famous %}<h2>प्रसिद्ध व्यक्ति <span class="en">/ Known people</span></h2>
+<p>{{ e.famous }}</p>{% endif %}
+{% include ad.html n=2 %}
+<h2>एउटै राशिका अन्य नाम <span class="en">/ More names in the same rashi</span></h2>
+<ul class="rel">
+{% for step in (1..nshow) %}{%- assign j = idx | plus: step | modulo: psize -%}{%- assign x = pool[j] -%}
+<li><a href="/name/{{ x.slug }}/">{{ x.name }}</a> <span class="en" lang="en">{{ x.en }} · {{ x.meaning_en }}</span></li>
+{% endfor %}</ul>
+<p>{% if lt %}<a href="/names/letter-{{ lt.slug }}/">“{{ first }}” बाट सुरु हुने सबै नाम</a> · {% endif %}<a href="/rashi/{{ r.slug }}/">{{ r.ne }} राशिका सबै नाम</a> · <a href="/tools/rashi-finder/">राशि खोज्ने साधन</a></p>
+{%- capture q1 %}{{ e.name }} नामको अर्थ के हो? / What does the name {{ e.en }} mean?{% endcapture -%}
+{%- capture a1 %}{{ e.name }} को अर्थ: {{ e.meaning_ne }}।{% if e.status == 'verify' %} अर्थ पुष्टि गर्नुहोस्।{% endif %}{% endcapture -%}
+{%- capture b1 %}{{ e.en }} means: {{ e.meaning_en }}.{% if e.status == 'verify' %} Please verify this meaning.{% endif %}{% endcapture -%}
+{%- capture q2 %}{{ e.name }} कुन राशिमा पर्छ? / Which rashi does {{ e.en }} belong to?{% endcapture -%}
+{%- capture a2 %}नामको पहिलो अक्षर “{{ chart }}” अनुसार यो {{ r.ne }} राशिमा पर्छ। जन्मराशि भने ज्योतिषीले जन्म मिति, समय र ठाउँबाट निकाल्छन्।{% endcapture -%}
+{%- capture b2 %}By its first letter {{ chart }} the name falls under {{ R }} rashi. The birth rashi itself is worked out by an astrologer from the birth date, time and place.{% endcapture -%}
+{%- capture q3 %}{{ e.name }} छोरीको नाम हो कि छोराको? / Is {{ e.en }} a boy or a girl name?{% endcapture -%}
+{%- capture a3 %}यो {{ gne }} नाम हो।{% endcapture -%}
+{%- capture b3 %}It is listed as a {{ gender }} name.{% endcapture -%}
+{%- capture q4 %}{{ e.name }} नामको उत्पत्ति के हो? / What is the origin of {{ e.en }}?{% endcapture -%}
+{%- capture a4 %}उत्पत्ति: {{ origin }}।{% endcapture -%}
+{%- capture b4 %}Origin: {{ origin }}.{% endcapture -%}
+<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
+<details><summary>{{ q1 }}</summary><p>{{ a1 }}</p><p class="en" lang="en">{{ b1 }}</p></details>
+<details><summary>{{ q2 }}</summary><p>{{ a2 }}</p><p class="en" lang="en">{{ b2 }}</p></details>
+<details><summary>{{ q3 }}</summary><p>{{ a3 }}</p><p class="en" lang="en">{{ b3 }}</p></details>
+<details><summary>{{ q4 }}</summary><p>{{ a4 }}</p><p class="en" lang="en">{{ b4 }}</p></details>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"DefinedTerm","name":{{ e.name | jsonify }},"alternateName":{{ e.en | jsonify }},"description":{{ e.meaning_en | jsonify }},"inDefinedTermSet":"{{ site.url }}/"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":{{ q1 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | append: ' ' | append: b1 | jsonify }} } },
+{"@type":"Question","name":{{ q2 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | append: ' ' | append: b2 | jsonify }} } },
+{"@type":"Question","name":{{ q3 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | append: ' ' | append: b3 | jsonify }} } },
+{"@type":"Question","name":{{ q4 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a4 | append: ' ' | append: b4 | jsonify }} } }
+]}
+]}
+</script>

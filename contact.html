@@ -1,0 +1,58 @@
+---
+title: 'सम्पर्क | Contact Namkosh'
+description: 'नाम वा अर्थमा गल्ती भेटेमा वा सुझाव दिन सम्पर्क गर्नुहोस्। Contact Namkosh to report a correction or send a suggestion.'
+permalink: /contact/
+crumb: 'सम्पर्क / Contact'
+updated: 2026-10-31
+related:
+  - url: '/about/'
+    ne: 'हाम्रोबारे'
+    en: 'About us'
+  - url: '/editorial-policy/'
+    ne: 'सम्पादन नीति'
+    en: 'Editorial policy'
+  - url: '/privacy-policy/'
+    ne: 'गोपनीयता नीति'
+    en: 'Privacy policy'
+  - url: '/disclaimer/'
+    ne: 'अस्वीकरण'
+    en: 'Disclaimer'
+  - url: '/terms/'
+    ne: 'सर्तहरू'
+    en: 'Terms of use'
+  - url: '/tools/name-search/'
+    ne: 'नाम खोज्ने'
+    en: 'Advanced name search'
+faq:
+  - q: 'गल्ती सच्याउन के पठाउने? / What should I send to correct a mistake?'
+    ne: 'नाम, पृष्ठको ठेगाना, तपाईंले सही ठान्ने अर्थ र सम्भव भए स्रोत (शब्दकोश वा किताबको नाम) पठाउनुहोस्।'
+    en: 'Send the name, the page address, the meaning you believe is correct and, if possible, the source (dictionary or book).'
+  - q: 'नयाँ नाम सुझाव दिन मिल्छ? / Can I suggest a new name?'
+    ne: 'मिल्छ। नाम, अर्थ र स्रोत पठाउनुहोस्। जाँचेर मात्र थपिन्छ।'
+    en: 'Yes. Send the name, meaning and source. We add names only after checking.'
+  - q: 'तपाईंहरूले ज्योतिषीय सल्लाह दिनुहुन्छ? / Do you give astrology advice?'
+    ne: 'दिँदैनौं। जन्मराशि र नामाक्षरका लागि आफ्ना ज्योतिषी वा पुरोहितसँग सोध्नुहोस्।'
+    en: 'No. For your birth rashi and naming letter, ask your own astrologer or priest.'
+---
+<h1>सम्पर्क <span class="en">(Contact)</span></h1>
+<p>कुनै नाम वा अर्थमा गल्ती भेट्नुभयो भने, वा नयाँ नाम सुझाव दिन चाहनुहुन्छ भने तल दिइएको तरिकाबाट सम्पर्क गर्नुहोस्। हामी सुझाव जाँचेर मात्र सच्याउँछौं।</p>
+<p class="en" lang="en">If you find a mistake in a name or meaning, or want to suggest a name, contact us below. We correct things only after checking.</p>
+
+{% include ad.html n=1 %}
+
+<h2>सम्पर्कका तरिका <span class="en">/ Ways to reach us</span></h2>
+<ul>
+{% if site.contact_email and site.contact_email != '' %}<li><strong>ईमेल / Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>{% endif %}
+<li><strong>GitHub:</strong> <a href="{{ site.github_issues }}" rel="noopener">गल्ती वा सुझाव खुला रूपमा पठाउनुहोस् / Open an issue to report a correction or suggestion</a></li>
+</ul>
+
+<h2>गल्ती सूचना गर्दा <span class="en">/ When reporting a mistake</span></h2>
+<ol>
+<li>नाम र पृष्ठको ठेगाना लेख्नुहोस्।<br><span class="en" lang="en">Write the name and the page address.</span></li>
+<li>तपाईंले सही ठान्ने अर्थ लेख्नुहोस्।<br><span class="en" lang="en">Write the meaning you believe is correct.</span></li>
+<li>सम्भव भए स्रोत (शब्दकोश, किताब वा लिंक) दिनुहोस्।<br><span class="en" lang="en">Give a source (dictionary, book or link) if you can.</span></li>
+</ol>
+<p>हामी सबै सन्देशको जवाफ दिने ग्यारेन्टी गर्न सक्दैनौं, तर प्रत्येक सुझाव पढ्छौं र जाँचेर मात्र सामग्री अद्यावधिक गर्छौं। थप जानकारीका लागि <a href="/editorial-policy/">सम्पादन नीति</a> हेर्नुहोस्।</p>
+<p class="en" lang="en">We cannot promise to reply to every message, but we read each suggestion and update content only after checking. See the <a href="/editorial-policy/">editorial policy</a>.</p>
+
+{% include faq.html %}

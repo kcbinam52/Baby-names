@@ -17,8 +17,8 @@
 <link rel="canonical" href="{{ page_url }}">
 {% if page.noindex %}<meta name="robots" content="noindex">{% else %}<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">{% endif %}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-{% if site.google_site_verification != blank %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
-{% if site.bing_site_verification != blank %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
+{% if site.google_site_verification and site.google_site_verification != '' %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.bing_site_verification and site.bing_site_verification != '' %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
 <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
 <meta property="og:site_name" content="{{ site.title_en }}">
 <meta property="og:locale" content="ne_NP">
@@ -26,18 +26,19 @@
 <meta property="og:title" content="{{ ptitle | escape }}">
 <meta property="og:description" content="{{ pdesc | escape }}">
 <meta property="og:url" content="{{ page_url }}">
-<meta name="twitter:card" content="{% if img != blank %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:card" content="{% if img and img != '' %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{{ ptitle | escape }}">
 <meta name="twitter:description" content="{{ pdesc | escape }}">
-{% if img != blank %}<meta property="og:image" content="{{ img | absolute_url }}">
+{% if img and img != '' %}<meta property="og:image" content="{{ img | absolute_url }}">
 <meta name="twitter:image" content="{{ img | absolute_url }}">{% endif %}
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"{{ site.url }}/#org","name":{{ site.title_en | jsonify }},"url":"{{ site.url }}/"},
-{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":{{ site.title | append: ' / ' | append: site.title_en | jsonify }},"inLanguage":["ne","en"],"publisher":{"@id":"{{ site.url }}/#org"}},
-{"@type":"WebPage","@id":"{{ page_url }}#webpage","url":"{{ page_url }}","name":{{ ptitle | jsonify }},"description":{{ pdesc | jsonify }},"inLanguage":["ne","en"],"isPartOf":{"@id":"{{ site.url }}/#website"}{% if page.updated %},"dateModified":"{{ page.updated | date: '%Y-%m-%d' }}"{% endif %}}
+{% if site.author_name and site.author_name != '' %}{"@type":"Person","@id":"{{ site.url }}/#author","name":{{ site.author_name | jsonify }}},
+{% endif %}{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":{{ site.title | append: ' / ' | append: site.title_en | jsonify }},"inLanguage":["ne","en"],"publisher":{"@id":"{{ site.url }}/#org"}},
+{"@type":"WebPage","@id":"{{ page_url }}#webpage","url":"{{ page_url }}","name":{{ ptitle | jsonify }},"description":{{ pdesc | jsonify }},"inLanguage":["ne","en"],"isPartOf":{"@id":"{{ site.url }}/#website"}{% if site.author_name and site.author_name != '' %},"author":{"@id":"{{ site.url }}/#author"}{% endif %}{% if page.updated %},"dateModified":"{{ page.updated | date: '%Y-%m-%d' }}"{% endif %}}
 ]}
 </script>
-{% if site.ga4_id != blank %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+{% if site.ga4_id and site.ga4_id != '' %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.ga4_id }}');</script>{% endif %}

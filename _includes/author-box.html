@@ -1,0 +1,5 @@
+{% if site.author_name and site.author_name != '' %}<aside class="card byline">
+<p><strong>सम्पादक / Editor:</strong> {{ site.author_name }}{% if site.author_bio_ne and site.author_bio_ne != '' %} — {{ site.author_bio_ne }}{% endif %}</p>
+{% if site.author_bio_en and site.author_bio_en != '' %}<p class="en" lang="en">{{ site.author_bio_en }}</p>{% endif %}
+</aside>{% endif %}
+<p class="en"><a href="/editorial-policy/">हाम्रो सम्पादन नीति / Editorial policy</a> · <a href="/contact/">गल्ती सच्याउन सम्पर्क / Report a correction</a></p>
