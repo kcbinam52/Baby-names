@@ -68,6 +68,8 @@ updated: 2026-10-31
   var names = [
 {% endraw %}{% assign first_name = true %}{% for n in site.data.names %}{% unless first_name %},{% endunless %}{"name":{{ n.name | jsonify }},"en":{{ n.en | jsonify }},"gender":"girl","meaning":{{ n.meaning_ne | jsonify }},"meaningEn":{{ n.meaning_en | jsonify }},"slug":{{ n.slug | jsonify }},"rashi":{{ n.rashi | jsonify }},"syl":{{ n.syl | jsonify }},"origin":{{ n.origin | default: 'संस्कृत / Sanskrit' | jsonify }}}{% assign first_name = false %}{% endfor %}{% for n in site.data.names_more %}{% if n.gender == 'boy' or n.gender == 'girl' %}{% unless first_name %},{% endunless %}{"name":{{ n.name | jsonify }},"en":{{ n.en | jsonify }},"gender":{{ n.gender | jsonify }},"meaning":{{ n.meaning_ne | jsonify }},"meaningEn":{{ n.meaning_en | jsonify }},"slug":{{ n.slug | jsonify }},"rashi":{{ n.rashi | jsonify }},"syl":{{ n.syl | jsonify }},"origin":{{ n.origin | default: 'संस्कृत / Sanskrit' | jsonify }}}{% assign first_name = false %}{% endif %}{% endfor %}{% raw %}
   ];
+  var seenNames={};
+  names=names.filter(function(n){if(seenNames[n.slug])return false;seenNames[n.slug]=true;return true;});
   var rashiNames = {
 {% endraw %}{% for r in site.data.rashi %}{% unless forloop.first %},{% endunless %}{{ r.slug | jsonify }}:{{ r.ne | append: ' / ' | append: r.en | jsonify }}{% endfor %}{% raw %}
   };
@@ -82,7 +84,7 @@ updated: 2026-10-31
   function norm(s){
     return String(s||'').toLocaleLowerCase().normalize('NFC').replace(/[ँंः]/g,'').replace(/[ािीुूृेैोौंः]/g,'');
   }
-  function escapeText(s){return String(s==null?'':s);}
+  function escapeText(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
   function matches(n){
     var q=norm(query.value),l=norm(letter.value);
     var searchable=language.value==='ne'?[n.name,n.meaning]:language.value==='en'?[n.en,n.meaningEn]:[n.name,n.en,n.meaning,n.meaningEn];
