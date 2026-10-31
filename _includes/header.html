@@ -1,9 +1,20 @@
-<header class="site"><div class="w">
-<a class="logo" href="/">{{ site.title }}</a>
-<nav aria-label="मुख्य मेनु / Main menu">
-<a href="/tools/parent-name-matcher/"{% if page.url == '/tools/parent-name-matcher/' %} aria-current="page"{% endif %}>नाम मिलाउने / Name matcher</a>
-<a href="/tools/rashi-finder/"{% if page.url == '/tools/rashi-finder/' %} aria-current="page"{% endif %}>राशि खोज्ने</a>
-<a href="/guide/naming-ceremony/"{% if page.url == '/guide/naming-ceremony/' %} aria-current="page"{% endif %}>नामकरण गाइड</a>
-<a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>हाम्रोबारे</a>
-</nav>
-</div></header>
+<header class="site">
+  <div class="w">
+    <a class="logo" href="/">{{ site.title }}</a>
+    <nav aria-label="मुख्य मेनु / Main menu">
+      <a href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>गृहपृष्ठ / Home</a>
+      <details class="nav-dropdown"{% if page.url contains '/rashi/' %} open{% endif %}>
+        <summary>राशि अनुसार नाम / Rashi names</summary>
+        <div class="dropdown-panel">
+          {% for r in site.data.rashi %}
+          <a href="/rashi/{{ r.slug }}/"{% if page.url == r.url %} aria-current="page"{% endif %}>{{ r.ne }} <span lang="en">{{ r.en }}</span></a>
+          {% endfor %}
+        </div>
+      </details>
+      <a href="/tools/rashi-finder/"{% if page.url == '/tools/rashi-finder/' %} aria-current="page"{% endif %}>राशि खोज्ने / Rashi finder</a>
+      <a href="/tools/parent-name-matcher/"{% if page.url == '/tools/parent-name-matcher/' %} aria-current="page"{% endif %}>नाम मिलाउने / Name matcher</a>
+      <a href="/guide/naming-ceremony/"{% if page.url == '/guide/naming-ceremony/' %} aria-current="page"{% endif %}>नामकरण गाइड</a>
+      <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>हाम्रोबारे / About</a>
+    </nav>
+  </div>
+</header>
