@@ -7,7 +7,7 @@
         <summary>राशि अनुसार नाम / Rashi names</summary>
         <div class="dropdown-panel">
           {% for r in site.data.rashi %}
-          <a href="/rashi/{{ r.slug }}/"{% if page.url == r.url %} aria-current="page"{% endif %}>{{ r.ne }} <span lang="en">{{ r.en }}</span></a>
+          <a href="/rashi/{{ r.slug }}/"{% if page.url == '/rashi/' | append: r.slug | append: '/' %} aria-current="page"{% endif %}>{{ r.ne }} <span lang="en">{{ r.en }}</span></a>
           {% endfor %}
         </div>
       </details>
