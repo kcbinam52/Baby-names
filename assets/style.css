@@ -75,3 +75,21 @@ footer.site .footer-rashi-list{display:grid;grid-template-columns:1fr 1fr;column
   header.site nav{width:100%;gap:2px 6px}
   .dropdown-panel{left:0;right:auto;max-width:min(92vw,360px)}
 }
+
+/* Advanced baby-name search */
+.name-search-card{margin:18px 0}
+.name-search-form{display:grid;grid-template-columns:1fr;gap:10px}
+.name-search-form>label,.search-filter-grid label{display:block;font-weight:700;font-size:14px;margin-bottom:3px}
+.name-search-form input[type=search],.name-search-form input[type=text],.name-search-form select{width:100%;min-width:0;min-height:46px;padding:9px 11px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--fg);font:inherit}
+.search-filter-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.search-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search-reset{min-height:44px;padding:8px 14px;border:1px solid var(--bd);border-radius:9px;background:var(--card);color:var(--fg)}
+.search-count{font-weight:700;color:var(--pr);margin:18px 0 10px}
+.name-results{display:grid;gap:10px}
+.name-result{padding:12px 14px}
+.name-result h2{font-size:1.12rem;line-height:1.45;margin:0;color:var(--fg)}
+.name-result-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.name-gender{font-size:12px;border:1px solid var(--bd);border-radius:999px;padding:2px 8px;white-space:nowrap;color:var(--mu)}
+.name-result p{margin:6px 0}
+.name-meta{font-size:13px;color:var(--mu)}
+@media(max-width:440px){.search-filter-grid{grid-template-columns:1fr}}
