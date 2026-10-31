@@ -1,5 +1,36 @@
-<footer class="site"><div class="w">
-<p>अन्तिम अपडेट: {{ page.updated | default: site.time | date: '%Y-%m-%d' }} · <span lang="en">Last updated: {{ page.updated | default: site.time | date: '%-d %B %Y' }}</span></p>
-<p>यहाँ दिइएको जानकारी मार्गदर्शनका लागि मात्र हो; पक्का गर्न पुरोहित वा ज्योतिषीसँग सोध्नुहोस्।<br><span lang="en">Information here is for guidance only. Please confirm with a priest or astrologer.</span></p>
-<nav aria-label="Footer"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclaimer/">Disclaimer</a></nav>
-</div></footer>
+<footer class="site">
+  <div class="w">
+    <p>अन्तिम अपडेट: {{ page.updated | default: site.time | date: '%Y-%m-%d' }} · <span lang="en">Last updated: {{ page.updated | default: site.time | date: '%-d %B %Y' }}</span></p>
+    <p>यहाँ दिइएको जानकारी मार्गदर्शनका लागि मात्र हो; पक्का गर्न पुरोहित वा ज्योतिषीसँग सोध्नुहोस्।<br><span lang="en">Information here is for guidance only. Please confirm with a priest or astrologer.</span></p>
+    <div class="footer-links">
+      <section aria-labelledby="footer-tools">
+        <h2 id="footer-tools">नामका साधन / Name tools</h2>
+        <ul>
+          <li><a href="/tools/rashi-finder/">राशि खोज्ने / Rashi finder</a></li>
+          <li><a href="/tools/parent-name-matcher/">अभिभावकको नामबाट नाम मिलाउने / Parent-name matcher</a></li>
+          <li><a href="/guide/naming-ceremony/">नामकरण / न्वारन गाइड</a></li>
+          <li><a href="/">सबै नाम / All baby names</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-rashi">
+        <h2 id="footer-rashi">१२ राशि अनुसार नाम / Names by all 12 Rashis</h2>
+        <ul class="footer-rashi-list">
+          {% for r in site.data.rashi %}
+          <li><a href="/rashi/{{ r.slug }}/">{{ r.ne }} <span lang="en">{{ r.en }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section aria-labelledby="footer-info">
+        <h2 id="footer-info">जानकारी / Information</h2>
+        <ul>
+          <li><a href="/about/">हाम्रोबारे / About</a></li>
+          <li><a href="/contact/">सम्पर्क / Contact</a></li>
+          <li><a href="/privacy-policy/">गोपनीयता नीति / Privacy</a></li>
+          <li><a href="/terms/">सेवाका सर्त / Terms</a></li>
+          <li><a href="/disclaimer/">अस्वीकरण / Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="footer-copy">© {{ site.time | date: '%Y' }} {{ site.title_en }}</p>
+  </div>
+</footer>
