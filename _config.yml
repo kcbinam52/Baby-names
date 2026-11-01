@@ -16,9 +16,9 @@ ga4_id: ''                     # e.g. G-XXXXXXXXXX
 
 # Contact and editor details. Fill these in: they appear on the Contact page,
 # in the page footer byline and in the site schema. Leave empty to hide them.
-contact_email: ''
+contact_email: 'Info@binitasth.com.np'
 github_issues: 'https://github.com/kcbinam52/Baby-names/issues/new'
-author_name: ''
+author_name: 'Binita Shrestha'
 author_bio_ne: ''
 author_bio_en: ''
 
