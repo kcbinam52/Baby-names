@@ -1,0 +1,55 @@
+{%- if page.gender == 'girl' -%}
+{%- assign more = site.data.names_more | where: 'gender', 'girl' -%}
+{%- assign list = site.data.names | concat: more -%}
+{%- assign gne = 'छोरीको' -%}{%- assign gen = 'girl' -%}{%- assign gword = 'छोरीका' -%}
+{%- else -%}
+{%- assign list = site.data.names_more | where: 'gender', 'boy' -%}
+{%- assign gne = 'छोराको' -%}{%- assign gen = 'boy' -%}{%- assign gword = 'छोराका' -%}
+{%- endif -%}
+{%- assign total = list.size -%}
+{%- assign groups = list | group_by_exp: 'n', 'n.name | slice: 0' | sort: 'name' -%}
+<h1>{{ gne }} नाम अर्थसहित <span class="en">(Nepali {{ gen | capitalize }} Names with Meaning)</span></h1>
+<p>यहाँ {{ total }} वटा {{ gword }} नाम अक्षरअनुसार अर्थ, उत्पत्ति र राशिसहित दिइएका छन्। नाममा थिचेर विस्तृत विवरण हेर्न सकिन्छ, र राशिको नामाक्षर अनुसार छान्न <a href="/tools/rashi-finder/">राशि खोज्ने साधन</a> प्रयोग गर्न सकिन्छ।</p>
+<p class="en" lang="en">This page lists {{ total }} Nepali {{ gen }} names by first letter, each with meaning, origin and rashi. Tap a name for details, or use the <a href="/tools/rashi-finder/">rashi finder</a> to match the naming letter.</p>
+{% include ad.html n=1 %}
+<h2>अक्षर छान्नुहोस् <span class="en">/ Jump to a letter</span></h2>
+<div class="chips" aria-label="अक्षर / Letters">{% for g in groups %}<a href="#l-{{ forloop.index }}">{{ g.name }} <small>{{ g.size }}</small></a>{% endfor %}</div>
+<h2>राशि अनुसार हेर्नुहोस् <span class="en">/ Browse by rashi</span></h2>
+<div class="chips">{% for r in site.data.rashi %}<a href="/rashi/{{ r.slug }}/">{{ r.ne }}</a>{% endfor %}</div>
+{% for g in groups %}{%- assign items = g.items | sort: 'name' -%}{%- assign lt = site.data.letters | where: 'ch', g.name | first -%}
+<h2 id="l-{{ forloop.index }}">“{{ g.name }}” बाट सुरु हुने {{ gword }} नाम <span class="en">/ {{ g.size }} names{% if lt %} · <a href="/names/letter-{{ lt.slug }}/">all with {{ lt.en }}</a>{% endif %}</span></h2>
+{% include name-table.html items=items mode='letter' %}
+{% if forloop.index == 6 %}{% include ad.html n=2 %}{% endif %}
+{% endfor %}
+<p>* छोटो “अ”-ध्वनि (म, क, र आदि) लाई मा, का, रा र “आ” लाई “अ” मानेर राशि दिइएको छ। पक्का गर्न ज्योतिषीसँग सोध्नुहोस्।</p>
+<p class="en" lang="en">* A short a-sound (म, क, र and so on) is read as the chart letter मा, का, रा, and आ as अ, to give the rashi. Please confirm with an astrologer.</p>
+{%- capture q1 %}{{ gne }} नाम कसरी रोज्ने? / How do I choose a {{ gen }} name?{% endcapture -%}
+{%- capture a1 %}अर्थ राम्रो र स्पष्ट छ कि छैन, उच्चारण सजिलो छ कि छैन, परिवारको परम्परा र चाहिए राशिको नामाक्षर हेर्नुहोस्। नागरिकता र पासपोर्टमा लेखिने हिज्जे पनि सोचेर एउटै राख्नुहोस्।{% endcapture -%}
+{%- capture b1 %}Check that the meaning is clear, the name is easy to say, and it suits family tradition and, if you wish, the rashi letter. Decide one spelling that you will use on certificates and the passport.{% endcapture -%}
+{%- capture q2 %}राशि अनुसार नाम कसरी खोज्ने? / How do I find a name by rashi?{% endcapture -%}
+{%- capture a2 %}आफ्नो राशि थाहा छ भने माथिको राशि सूचीबाट छान्नुहोस्। नामको पहिलो अक्षरको राशि हेर्न राशि खोज्ने साधन प्रयोग गर्नुहोस्।{% endcapture -%}
+{%- capture b2 %}If you know your rashi, pick it from the rashi list above. To see the rashi of a name's first letter, use the rashi finder tool.{% endcapture -%}
+{%- capture q3 %}यहाँ कति नाम छन्? / How many names are listed?{% endcapture -%}
+{%- capture a3 %}अहिले {{ total }} वटा {{ gword }} नाम छन्, र सूची क्रमशः बढ्दै जान्छ।{% endcapture -%}
+{%- capture b3 %}There are {{ total }} {{ gen }} names right now, and the list keeps growing.{% endcapture -%}
+{%- capture q4 %}यहाँका अर्थ पक्का छन्? / Are the meanings certain?{% endcapture -%}
+{%- capture a4 %}पक्का भएका अर्थ मात्र लेखिएका छन्। शंका भएका नाममा “अर्थ पुष्टि गर्नुहोस्” लेखिएको छ।{% endcapture -%}
+{%- capture b4 %}Only meanings we are sure of are written. Doubtful names carry a verify meaning tag.{% endcapture -%}
+{%- capture q5 %}नामकरण कहिले गर्ने? / When is the naming ceremony held?{% endcapture -%}
+{%- capture a5 %}परिवार र समुदाय अनुसार फरक हुन्छ; कतिपय परिवारले ११ औँ दिनमा गर्छन्। विस्तृत जानकारीका लागि नामकरण गाइड हेर्नुहोस्।{% endcapture -%}
+{%- capture b5 %}It differs by family and community; some families hold it on the 11th day. See the naming ceremony guide for details.{% endcapture -%}
+<h2>बारम्बार सोधिने प्रश्न <span class="en">/ FAQ</span></h2>
+<details><summary>{{ q1 }}</summary><p>{{ a1 }}</p><p class="en" lang="en">{{ b1 }}</p></details>
+<details><summary>{{ q2 }}</summary><p>{{ a2 }}</p><p class="en" lang="en">{{ b2 }}</p></details>
+<details><summary>{{ q3 }}</summary><p>{{ a3 }}</p><p class="en" lang="en">{{ b3 }}</p></details>
+<details><summary>{{ q4 }}</summary><p>{{ a4 }}</p><p class="en" lang="en">{{ b4 }}</p></details>
+<details><summary>{{ q5 }}</summary><p>{{ a5 }}</p><p class="en" lang="en">{{ b5 }}</p></details>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":{{ q1 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | append: ' ' | append: b1 | jsonify }} } },
+{"@type":"Question","name":{{ q2 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | append: ' ' | append: b2 | jsonify }} } },
+{"@type":"Question","name":{{ q3 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | append: ' ' | append: b3 | jsonify }} } },
+{"@type":"Question","name":{{ q4 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a4 | append: ' ' | append: b4 | jsonify }} } },
+{"@type":"Question","name":{{ q5 | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ a5 | append: ' ' | append: b5 | jsonify }} } }
+]}
+</script>
